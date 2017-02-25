@@ -1,0 +1,36 @@
+Lecture 13 Notes
+----------------
+
+Due Dates
+* LA #5 - 2/23/2017
+* Quiz #5 - 2/28
+* Static background - 2/23/2017
+* Static with name - 3/2/2017
+
+Moore & Mealy State machine
+
+Finite State Machines
+* Types of State Machines 												(quiz)
+	* Minimum number of bits (best for CPLD)
+	* One hot (best for FPGA)
+* Approach:
+	1) Draw State Transition Diagram (STD)
+	2) State Representation
+	3) Draw State Transition Table (STT)
+	4) Derive logic equations for current state outputs
+	5) Draw schematic
+* State machines must include reset process
+	* if(reset == '1') then
+		temp <= '0';
+	  elsif(rising_edge(clk)) then 
+		temp <= temp + 1;
+
+Moore Machines
+	* Slide 11															(quiz)
+	* defining Moore type (or use constants):
+		type state_type is (reset, got1, got10, got101);
+	* Then create signals:
+		signal current_state, next_state : state_type;
+	* 
+	
+	

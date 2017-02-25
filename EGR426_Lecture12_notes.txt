@@ -1,0 +1,28 @@
+Lecture 12
+--------------------------------------------------------------------------------
+Inferred Latches
+	* They usually cause warnings
+	* It's when a variable is changed to a state and will never be changed
+		after that.
+
+Functional Registers (continued)
+* LFSR (Linear Feedback Shift Register)
+	* For pseudo random number generation
+	* Shift register with feedback and XOR gates in its feedback path
+	* 4-bit shift register: good for debouncing
+* Stacks and Queues
+	* FIFO (First In First Out) Queue
+	* Uses a buffer
+	* 4 Processes:
+		* Write
+		* Read
+		* Pointer
+		* Count
+		
+		
+Lab Exam
+	* Last day of class - Thursday (4pm to 8pm)
+	* Problem Statement or...
+		* Working demo
+	* Problem statement + template
+		* working demo

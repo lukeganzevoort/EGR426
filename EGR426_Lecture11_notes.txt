@@ -1,0 +1,21 @@
+File I/O tasks
+	Reading and writing to a file
+
+VGA Controller
+	* 5 components 
+		Horizontal sync
+		vertical sync 
+		Red, Green, and Blue signals
+	* Vertical retrace - moving cursor back to top
+	* Moves right to left (640 columns by 480 rows)
+	* Use file: vga_controller_640_60.vhd
+	* Beam draws pixel at 25.175 MHz (39.72ns/pixel)
+	* Don't display information during back porch or front porch
+
+Keyboard Interface (extra credit for project)
+	* Scan code:
+		* MAKE scan code (Keyboard key press code (1 byte))
+		* BREAK scan code (0xF0 then keyboard key press code (2 bytes))
+		* GOOGLE: USB HID HOST
+		
+	

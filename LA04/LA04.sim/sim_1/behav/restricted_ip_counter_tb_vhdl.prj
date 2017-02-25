@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../LA04.srcs/sources_1/ip/four_bit_count/sim/four_bit_count.vhd"
+vhdl xil_defaultlib  "../../../LA04.srcs/sources_1/new/restricted_ip_counter.vhd"
+vhdl xil_defaultlib  "../../../LA04.srcs/sim_1/new/restricted_ip_counter_tb.vhd"
+
+# Do not sort compile order
+nosort
