@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../static_background_proj_2.srcs/sources_1/new/LFSR_Random.vhd"
+vhdl xil_defaultlib  "../../../static_background_proj_2.srcs/sources_1/new/colorbars.vhd"
+vhdl xil_defaultlib  "../../../static_background_proj_2.srcs/sim_1/new/colorbars_tb.vhd"
+
+# Do not sort compile order
+nosort

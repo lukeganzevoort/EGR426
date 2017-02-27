@@ -1,0 +1,1 @@
+-wto "f0a40ecde89444b2b7ddd91748cc1d99" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "colorbars_tb_behav" "xil_defaultlib.colorbars_tb" -log "elaborate.log" 
