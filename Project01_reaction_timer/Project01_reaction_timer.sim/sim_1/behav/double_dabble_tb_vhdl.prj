@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  "../../../Project01_reaction_timer.srcs/sources_1/new/double_dabble.vhd"
-vhdl xil_defaultlib  "../../../Project01_reaction_timer.srcs/sim_1/new/double_dabble_tb.vhd"
-
-# Do not sort compile order
-nosort

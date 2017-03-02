@@ -1,1 +1,0 @@
--wto "df3b04a1c3e5475fb6ee36227d5eb6c8" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "double_dabble_tb_behav" "xil_defaultlib.double_dabble_tb" -log "elaborate.log" 
