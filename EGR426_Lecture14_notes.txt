@@ -1,0 +1,31 @@
+Lecture 14 - Finite State Machines (2/28)
+------------------------------------------
+Announcements
+* Quiz #4 (today 2/28)
+* Template #4 (on website)
+* Project #2 (due soon)
+* JPEG to CEO file:
+	https://github.com/CptSpaceToaster/coegen
+	https://github.com/Jesse-Millwood/...
+	(will be posted on website)
+* Lab on chipscope Analyzer after spring break
+------------------------------------------
+
+Mealy State Machines
+* Output depends on current state and how you reached that state.
+* Input change causes an immediate output change.
+
+	Huffman Coding Style
+	* Characterizes it as a combination block with feedbacks through an array of
+		registers.
+	
+	More Modular Style
+	* Has block for handling transitions, and one for assigning values to 
+		outputs
+
+	ROM Based Controller
+	* Present the present state and the inputs
+	* Address: input & current state
+	  Data at address: output & next state
+		ex: state: 00, input: 1, output: 0, next state: 01
+			Address: 100, data at address: 001

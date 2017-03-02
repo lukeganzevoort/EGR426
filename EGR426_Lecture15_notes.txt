@@ -1,0 +1,43 @@
+Lecture 15 - Synthesis
+3/2/2017
+---------------------------------
+* LA#6 today
+* Template #5 soon
+* Parts to project
+	* Static background
+	* Text
+	* Motion
+	* Collision detection
+	* Game Logic
+	* Merge
+	* Demo Works
+--------------------------------
+
+Synthesis - converts VHDL into boolean operations
+* Combination Synthesis
+	* Gate Level Synthesis
+		* Using predefined primitives
+		* AND, OR, NOR, etc... gates
+	* Synthesizing Continuous Assignments
+		* Multiple assignments are also allowed in synthesis
+	* Behavioral Synthesis
+		* Input Sensitivity
+		* Output Assignments
+			* Default
+			* Else conditions
+	* Mixed Synthesis
+		* slide 23	bullet 1											(quiz)
+* Sequential Synthesis
+	* Latch Modelling
+	* Flip-Flop Modelling
+	* Memory Initialization
+		* COE - coefficient
+	A General Sequential Circuit Synthesis
+
+Vivado Logic Analyzer
+* Debug and verification (40% of time)
+* Debugging
+	* Break the problem into smaller parts and test
+	* Probes, Implement, Analyze, Fix
+	* ILA (integrated logic analyzer) and VIO (virtual input output)
+	
