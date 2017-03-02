@@ -42,29 +42,10 @@ end colorbars;
 
 architecture Behavioral of colorbars is
 
-  component LFSR_Random is
-    Port ( clk : in STD_LOGIC;
-         reset : in STD_LOGIC;
-         rand3bit : out STD_LOGIC_VECTOR (2 downto 0));
-  end component;
-
-  signal lfsr_rst : std_logic := '0';
-  signal rand3bits : std_logic_vector(2 downto 0) := "111";
-
 begin
-  l1: LFSR_Random port map(clk => clk_100MHz, reset => lfsr_rst, rand3bit=>rand3bits);
-
-
-  -- Reset_LFSR: process(vcount)
-  -- begin
-  --   if vcount = 0 then
-  --     lfsr_rst <= '1';
-  --   end if;
-  -- end process;
 
   Background: process(vcount,hcount,blank)
   begin
-    lfsr_rst <= '0';
     -- Main grid
     if (hcount = 160 and vcount <= 400 and vcount >= 120 and blank = '0')
     or (hcount = 480 and vcount <= 400 and vcount >= 80 and blank = '0')
@@ -113,26 +94,22 @@ begin
         Red <= "0000";
         Green <= "1111";
         Blue <= "0000";
+
     -- grid background
-    elsif(vcount >= 80 and vcount <= 400 and hcount >= 160 and hcount <= 480 and blank = '0') then
-      Red(3) <= '1';
-      Red(2) <= rand3bits(2);
-      Red(1) <= rand3bits(2);
-      Red(0) <= rand3bits(2);
-      Green(3) <= '1';
-      Green(2) <= rand3bits(2);
-      Green(1) <= rand3bits(2);
-      Green(0) <= rand3bits(2);
-      Blue(3) <= '1';
-      Blue(2) <= rand3bits(2);
-      Blue(1) <= rand3bits(2);
-      Blue(0) <= rand3bits(2);
+    elsif(vcount >= 80 and vcount <= 400 and hcount >= 160
+    and hcount <= 480 and blank = '0')
+    then
+      Red <= "1000";
+      Green <= "1000";
+      Blue <= "1000";
 
     -- background
     elsif(blank = '0') then
       Red <= "1000";
       Green <= "0101";
       Blue <= "0001";
+
+    -- blank case
     else
       Red <= "0000";
       Green <= "0000";

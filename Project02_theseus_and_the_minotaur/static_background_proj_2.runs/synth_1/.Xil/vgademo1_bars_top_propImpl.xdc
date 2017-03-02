@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc rfile:../../../static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc rfile:../../../static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N18 [get_ports {BLUE[0]}]
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]

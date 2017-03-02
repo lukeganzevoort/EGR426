@@ -52,21 +52,21 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.xpr [current_project]
-  set_property ip_output_repo C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.xpr [current_project]
+  set_property ip_output_repo C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.runs/synth_1/vgademo1_bars_top.dcp
-  add_files -quiet c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
-  set_property netlist_only true [get_files c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
-  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
-  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-  read_xdc -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-  read_xdc C:/Users/Luke/Documents/EGR426/static_background_proj_2/static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc
+  add_files -quiet C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.runs/synth_1/vgademo1_bars_top.dcp
+  add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
+  set_property netlist_only true [get_files c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
+  read_xdc -mode out_of_context -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+  read_xdc -prop_thru_buffers -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+  read_xdc -ref clk_wiz_0 -cells inst c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+  read_xdc C:/Users/Luke/Documents/EGR426/Project02_theseus_and_the_minotaur/static_background_proj_2.srcs/constrs_1/new/vgatop_pins.xdc
   link_design -top vgademo1_bars_top -part xc7a35tcpg236-1
   write_hwdef -file vgademo1_bars_top.hwdef
   close_msg_db -file init_design.pb

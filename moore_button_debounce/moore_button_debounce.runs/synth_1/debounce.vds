@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Feb 23 17:13:02 2017
-# Process ID: 3384
+# Start of session at: Thu Mar 02 17:51:36 2017
+# Process ID: 4192
 # Current directory: C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.runs/synth_1
 # Command line: vivado.exe -log debounce.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source debounce.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.runs/synth_1/debounce.vds
@@ -15,18 +15,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10436 
+INFO: Helper process launched with PID 6824 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 281.418 ; gain = 71.336
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 282.199 ; gain = 72.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.srcs/sources_1/new/debounce.vhd:30]
 WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.srcs/sources_1/new/debounce.vhd:37]
 INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.srcs/sources_1/new/debounce.vhd:30]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 318.824 ; gain = 108.742
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 319.586 ; gain = 110.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 318.824 ; gain = 108.742
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 319.586 ; gain = 110.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -34,7 +34,7 @@ Start Loading Part and Timing Information
 Loading part: xc7a35tcpg236-1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 318.824 ; gain = 108.742
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 319.586 ; gain = 110.086
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'debounce'
 INFO: [Synth 8-5544] ROM "pb_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -52,7 +52,7 @@ INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because addre
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'debounce'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 319.641 ; gain = 109.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 319.586 ; gain = 110.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -97,7 +97,7 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 422.230 ; gain = 212.148
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 441.828 ; gain = 232.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -110,7 +110,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 422.230 ; gain = 212.148
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 441.828 ; gain = 232.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -122,7 +122,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -146,7 +146,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -159,7 +159,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -171,25 +171,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,11 +220,11 @@ Report Instance Areas:
 |1     |top      |       |    12|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 431.938 ; gain = 221.855
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 431.938 ; gain = 221.855
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 431.938 ; gain = 221.855
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 451.535 ; gain = 242.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 451.535 ; gain = 242.035
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -236,7 +236,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 517.531 ; gain = 307.449
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 521.785 ; gain = 312.285
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Luke/Documents/EGR426/moore_button_debounce/moore_button_debounce.runs/synth_1/debounce.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 517.531 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 23 17:13:22 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 521.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 02 17:51:57 2017...
