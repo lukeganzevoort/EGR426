@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Mar 02 20:20:16 2017
+# Process ID: 900
+# Current directory: C:/Users/Luke/Documents/EGR426/Project02_characters/vgademo2_char.runs/rom1kx8_synth_1
+# Command line: vivado.exe -log rom1kx8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom1kx8.tcl
+# Log file: C:/Users/Luke/Documents/EGR426/Project02_characters/vgademo2_char.runs/rom1kx8_synth_1/rom1kx8.vds
+# Journal file: C:/Users/Luke/Documents/EGR426/Project02_characters/vgademo2_char.runs/rom1kx8_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rom1kx8.tcl -notrace
