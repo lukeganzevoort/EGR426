@@ -81,7 +81,7 @@ begin
       then
         Red <= "0000";
         Green <= "0000";
-        Blue <= "1111";
+        Blue <= "0000";
 
     -- intergrid lines
     elsif(((hcount = 160 or hcount = 200 or hcount = 240 or hcount = 280
@@ -91,9 +91,9 @@ begin
     or vcount = 240 or vcount = 280 or vcount = 320 or vcount = 360
     or vcount = 400) and hcount <= 480 and hcount >= 160 and blank = '0'))
     then
-        Red <= "0000";
-        Green <= "1111";
-        Blue <= "0000";
+        Red <= "1001";
+        Green <= "1001";
+        Blue <= "1001";
 
     -- grid background
     elsif(vcount >= 80 and vcount <= 400 and hcount >= 160
