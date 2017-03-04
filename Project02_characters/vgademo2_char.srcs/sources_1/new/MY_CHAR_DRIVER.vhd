@@ -44,10 +44,48 @@ begin
   -- char_row <= vcount(8 downto 3);  -- Character row in [0,59]
   process
   begin
-      if(vcount >= 80 and vcount < 96 and hcount >= 80 and hcount < 96) then
-        ASCII_CHAR <= "0000001";
-      elsif (vcount >= 80 and vcount < 96 and hcount >= 96 and hcount < 112) then
-        ASCII_CHAR <= "0000010";
+      if(vcount >= 80 and vcount < 96 and hcount >= 128 and hcount < 144) then
+        ASCII_CHAR <= "0000001"; -- T
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 144 and hcount < 160) then
+        ASCII_CHAR <= "0000010"; -- h
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 160 and hcount < 176) then
+        ASCII_CHAR <= "0000011"; -- e
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 176 and hcount < 192) then
+        ASCII_CHAR <= "0000100"; -- s
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 192 and hcount < 208) then
+        ASCII_CHAR <= "0000011"; -- e
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 208 and hcount < 224) then
+        ASCII_CHAR <= "0000101"; -- u
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 224 and hcount < 240) then
+        ASCII_CHAR <= "0000100"; -- s
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 256 and hcount < 272) then
+        ASCII_CHAR <= "0000110"; -- a
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 272 and hcount < 288) then
+        ASCII_CHAR <= "0000111"; -- n
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 288 and hcount < 304) then
+        ASCII_CHAR <= "0001000"; -- d
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 320 and hcount < 336) then
+        ASCII_CHAR <= "0001100"; -- t
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 336 and hcount < 352) then
+        ASCII_CHAR <= "0000010"; -- h
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 352 and hcount < 368) then
+        ASCII_CHAR <= "0000011"; -- e
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 384 and hcount < 400) then
+        ASCII_CHAR <= "0001001"; -- M
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 400 and hcount < 416) then
+        ASCII_CHAR <= "0001010"; -- i
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 416 and hcount < 432) then
+        ASCII_CHAR <= "0000111"; -- n
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 432 and hcount < 448) then
+        ASCII_CHAR <= "0001011"; -- o
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 448 and hcount < 464) then
+        ASCII_CHAR <= "0001100"; -- t
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 464 and hcount < 480) then
+        ASCII_CHAR <= "0000110"; -- a
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 480 and hcount < 496) then
+        ASCII_CHAR <= "0000101"; -- u
+      elsif (vcount >= 80 and vcount < 96 and hcount >= 496 and hcount < 512) then
+        ASCII_CHAR <= "0001101"; -- r
       else
         ASCII_CHAR <= "0000000";
       end if;

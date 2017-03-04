@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu Mar 02 20:33:04 2017
+| Date         : Sat Mar 04 17:37:59 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file vgademo2_char_top_utilization_placed.rpt -pb vgademo2_char_top_utilization_placed.pb
 | Design       : vgademo2_char_top
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              |   40 |     0 |     20800 |  0.19 |
-|   LUT as Logic          |   40 |     0 |     20800 |  0.19 |
+| Slice LUTs              |   42 |     0 |     20800 |  0.20 |
+|   LUT as Logic          |   42 |     0 |     20800 |  0.20 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |   50 |     0 |     41600 |  0.12 |
 |   Register as Flip Flop |   50 |     0 |     41600 |  0.12 |
@@ -67,20 +67,20 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |   16 |     0 |      8150 |  0.20 |
-|   SLICEL                                  |    8 |     0 |           |       |
-|   SLICEM                                  |    8 |     0 |           |       |
-| LUT as Logic                              |   40 |     0 |     20800 |  0.19 |
+| Slice                                     |   18 |     0 |      8150 |  0.22 |
+|   SLICEL                                  |    6 |     0 |           |       |
+|   SLICEM                                  |   12 |     0 |           |       |
+| LUT as Logic                              |   42 |     0 |     20800 |  0.20 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    |   29 |       |           |       |
-|   using O5 and O6                         |   11 |       |           |       |
+|   using O6 output only                    |   30 |       |           |       |
+|   using O5 and O6                         |   12 |       |           |       |
 | LUT as Memory                             |    0 |     0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
 |   LUT as Shift Register                   |    0 |     0 |           |       |
-| LUT Flip Flop Pairs                       |   17 |     0 |     20800 |  0.08 |
-|   fully used LUT-FF pairs                 |    6 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |    8 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |   10 |       |           |       |
+| LUT Flip Flop Pairs                       |   19 |     0 |     20800 |  0.09 |
+|   fully used LUT-FF pairs                 |    3 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |   12 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |   16 |       |           |       |
 | Unique Control Sets                       |    5 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -178,12 +178,12 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       |   50 |        Flop & Latch |
-| LUT6       |   22 |                 LUT |
+| LUT6       |   18 |                 LUT |
 | OBUF       |   15 |                  IO |
-| LUT5       |    8 |                 LUT |
-| LUT2       |    8 |                 LUT |
-| LUT4       |    7 |                 LUT |
-| LUT3       |    4 |                 LUT |
+| LUT5       |   11 |                 LUT |
+| LUT4       |   11 |                 LUT |
+| LUT3       |    7 |                 LUT |
+| LUT2       |    5 |                 LUT |
 | MUXF7      |    2 |               MuxFx |
 | LUT1       |    2 |                 LUT |
 | IBUF       |    2 |                  IO |

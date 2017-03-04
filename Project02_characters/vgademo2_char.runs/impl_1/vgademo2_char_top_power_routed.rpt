@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Thu Mar 02 20:33:37 2017
+| Date             : Sat Mar 04 17:38:31 2017
 | Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo2_char_top_power_routed.rpt -pb vgademo2_char_top_power_summary_routed.pb -rpx vgademo2_char_top_power_routed.rpx
 | Design           : vgademo2_char_top
@@ -50,12 +50,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      114 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       40 |     20800 |            0.19 |
+| Slice Logic    |    <0.001 |      117 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       42 |     20800 |            0.20 |
 |   Register     |    <0.001 |       50 |     41600 |            0.12 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |       94 |       --- |             --- |
+| Signals        |    <0.001 |       98 |       --- |             --- |
 | Block RAM      |    <0.001 |        1 |        50 |            2.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       17 |       106 |           16.04 |

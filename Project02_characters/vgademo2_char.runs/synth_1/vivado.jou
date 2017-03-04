@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Mar 02 20:31:47 2017
-# Process ID: 7752
+# Start of session at: Sat Mar 04 17:36:34 2017
+# Process ID: 9784
 # Current directory: C:/Users/Luke/Documents/EGR426/Project02_characters/vgademo2_char.runs/synth_1
 # Command line: vivado.exe -log vgademo2_char_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vgademo2_char_top.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/Project02_characters/vgademo2_char.runs/synth_1/vgademo2_char_top.vds

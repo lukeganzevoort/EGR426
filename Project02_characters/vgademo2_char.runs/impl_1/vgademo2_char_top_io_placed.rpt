@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu Mar 02 20:33:04 2017
+| Date         : Sat Mar 04 17:37:59 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_io -file vgademo2_char_top_io_placed.rpt
 | Design       : vgademo2_char_top

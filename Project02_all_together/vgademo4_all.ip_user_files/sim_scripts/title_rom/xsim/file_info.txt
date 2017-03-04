@@ -1,0 +1,1 @@
+title_rom_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../ip/title_rom/title_rom_sim_netlist.vhdl,

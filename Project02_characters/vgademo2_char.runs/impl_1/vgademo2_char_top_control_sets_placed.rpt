@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu Mar 02 20:33:04 2017
+| Date         : Sat Mar 04 17:37:59 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vgademo2_char_top_control_sets_placed.rpt
 | Design       : vgademo2_char_top
@@ -33,9 +33,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |            5 |
+| No           | No                    | No                     |              26 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              13 |            6 |
+| No           | Yes                   | No                     |              13 |            5 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              11 |            4 |
@@ -50,9 +50,9 @@ Table of Contents
 +-------------------+-------------------------+-------------------------+------------------+----------------+
 |  c1/inst/clk_out1 |                         | v1/HS0                  |                1 |              1 |
 |  c1/inst/clk_out1 |                         | v1/VS0                  |                1 |              1 |
-|  c1/inst/clk_out1 |                         | v1/hcounter[10]_i_1_n_0 |                4 |             11 |
+|  c1/inst/clk_out1 |                         | v1/hcounter[10]_i_1_n_0 |                3 |             11 |
 |  c1/inst/clk_out1 | v1/vcounter[10]_i_2_n_0 | v1/vcounter[10]_i_1_n_0 |                4 |             11 |
-|  c1/inst/clk_out1 |                         |                         |                5 |             26 |
+|  c1/inst/clk_out1 |                         |                         |                8 |             26 |
 +-------------------+-------------------------+-------------------------+------------------+----------------+
 
 

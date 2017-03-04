@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Sat Feb 20 16:56:11 2016
+# Process ID: 8060
+# Current directory: C:/chirag/GVSUcourses/Winter16/EGR426/Projects/Project2_Feb16/vgademo4_all/vgademo4_all.runs/impl_1
+# Command line: vivado.exe -log vgademo4_all_top.vdi -applog -messageDb vivado.pb -mode batch -source vgademo4_all_top.tcl -notrace
+# Log file: C:/chirag/GVSUcourses/Winter16/EGR426/Projects/Project2_Feb16/vgademo4_all/vgademo4_all.runs/impl_1/vgademo4_all_top.vdi
+# Journal file: C:/chirag/GVSUcourses/Winter16/EGR426/Projects/Project2_Feb16/vgademo4_all/vgademo4_all.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vgademo4_all_top.tcl -notrace
