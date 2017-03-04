@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Thu Mar 02 09:57:56 2017
-| Host             : parikhc-PC running 64-bit Service Pack 1  (build 7601)
+| Date             : Sat Mar 04 17:55:27 2017
+| Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo4_all_top_power_routed.rpt -pb vgademo4_all_top_power_summary_routed.pb -rpx vgademo4_all_top_power_routed.rpx
 | Design           : vgademo4_all_top
 | Device           : xc7a35tcpg236-1
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.001 |      460 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      262 |     20800 |            1.26 |
+| Slice Logic    |     0.001 |      584 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      368 |     20800 |            1.77 |
 |   CARRY4       |    <0.001 |       30 |      8150 |            0.37 |
 |   Register     |    <0.001 |       75 |     41600 |            0.18 |
 |   F7/F8 Muxes  |    <0.001 |        6 |     32600 |            0.02 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |    <0.001 |      359 |       --- |             --- |
+| Signals        |    <0.001 |      490 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       19 |       106 |           17.92 |

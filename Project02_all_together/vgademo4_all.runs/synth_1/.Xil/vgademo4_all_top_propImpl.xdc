@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/chirag/GVSUcourses/Winter17/EGR426/Projects/Project2_Feb16/vgademo4_all/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc rfile:../../../vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc rfile:../../../vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N18 [get_ports B0]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]

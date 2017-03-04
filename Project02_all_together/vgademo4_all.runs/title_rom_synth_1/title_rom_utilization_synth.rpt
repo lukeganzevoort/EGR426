@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu Mar 02 09:32:04 2017
-| Host         : parikhc-PC running 64-bit Service Pack 1  (build 7601)
+| Date         : Sat Mar 04 17:48:01 2017
+| Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file title_rom_utilization_synth.rpt -pb title_rom_utilization_synth.pb
 | Design       : title_rom
 | Device       : 7a35tcpg236-1
