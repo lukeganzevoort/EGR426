@@ -1,21 +1,21 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
+-- Company:
+-- Engineer:
+--
 -- Create Date: 02/20/2016 04:50:28 PM
--- Design Name: 
+-- Design Name:
 -- Module Name: vgademo4_all_top - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
+-- Project Name:
+-- Target Devices:
+-- Tool Versions:
+-- Description:
+--
+-- Dependencies:
+--
 -- Revision:
 -- Revision 0.01 - File Created
 -- Additional Comments:
--- 
+--
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity vgademo4_all_top is
-Port(clk_100MHz,reset,left_btn,right_btn : in STD_LOGIC; 
+Port(clk_100MHz,reset,left_btn,right_btn : in STD_LOGIC;
      HSYNC,VSYNC,locked : out STD_LOGIC;
      R3,R2,R1,R0,G3,G2,G1,G0,B3,B2,B1,B0 : out STD_LOGIC);
 end vgademo4_all_top;
@@ -62,23 +62,22 @@ Port (reset,VS,blank : in STD_LOGIC; hcount,vcount : in STD_LOGIC_VECTOR(10 down
 end component;
 
 component Green_cube is
-Port (left_btn,right_btn,reset,VS,blank : in STD_LOGIC; 
+Port (left_btn,right_btn,reset,VS,blank : in STD_LOGIC;
       hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
       Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
 component title_block is
-generic (X_coord1,X_coord2,X_coord3,X_coord4,Y_coord,SIZE : integer);
-Port (clk,reset,blank,VS : in STD_LOGIC;
+Port (clk,reset,blank : in STD_LOGIC;
       hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
       Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
 component merge_display is
-Port (Red_a,Red_b,Red_c,Red_d,Red_e : in STD_LOGIC_VECTOR(3 downto 0);
-      Green_a,Green_b,Green_c,Green_d,Green_e : in STD_LOGIC_VECTOR(3 downto 0);
-      Blue_a,Blue_b,Blue_c,Blue_d,Blue_e : in STD_LOGIC_VECTOR(3 downto 0);
-      R3,R2,R1,R0,G3,G2,G1,G0,B3,B2,B1,B0 : out STD_LOGIC);
+  Port (Red_back,Red_o1,Red_o2,Red_o3,Red_tle : in STD_LOGIC_VECTOR(3 downto 0);
+        Green_back,Green_o1,Green_o2,Green_o3,Green_tle : in STD_LOGIC_VECTOR(3 downto 0);
+        Blue_back,Blue_o1,Blue_o2,Blue_o3,Blue_tle : in STD_LOGIC_VECTOR(3 downto 0);
+        R3,R2,R1,R0,G3,G2,G1,G0,B3,B2,B1,B0 : out STD_LOGIC);
 end component;
 
 signal clk_25MHz,blank,VSYNC_temp : STD_LOGIC;
@@ -93,8 +92,8 @@ begin
 c1 : clk_wiz_0 PORT MAP (clk_in1 => clk_100MHz, reset => reset, clk_out1 => clk_25MHz,
                          locked => locked);
 
-v1 : vga_controller_640_60 PORT MAP (pixel_clk => clk_25MHz, rst => reset, HS => HSYNC, 
-                                     VS => VSYNC_temp, blank => blank, hcount => hcount, 
+v1 : vga_controller_640_60 PORT MAP (pixel_clk => clk_25MHz, rst => reset, HS => HSYNC,
+                                     VS => VSYNC_temp, blank => blank, hcount => hcount,
                                      vcount => vcount);
 
 s1 : static_background PORT MAP (hcount => hcount, vcount => vcount, blank => blank,
@@ -106,23 +105,22 @@ b11 : Blue_cube PORT MAP (reset => reset, VS => VSYNC_temp, blank => blank, hcou
 r11 : Red_cube PORT MAP (reset => reset, VS => VSYNC_temp, blank => blank, hcount => hcount,
                          vcount => vcount, RED => RED_r, GREEN => GREEN_r, BLUE => BLUE_r);
 
-g11 : Green_cube PORT MAP (left_btn => left_btn, right_btn => right_btn, reset => reset, 
+g11 : Green_cube PORT MAP (left_btn => left_btn, right_btn => right_btn, reset => reset,
                            VS => VSYNC_temp, blank => blank, hcount => hcount, vcount => vcount,
                            RED => RED_g, GREEN => GREEN_g, BLUE => BLUE_g);
 
-t1 : title_block GENERIC MAP (X_coord1 => 224, X_coord2 => 256, X_coord3 => 288, X_coord4 => 320, Y_coord => 32, SIZE => 32)
-                 PORT MAP (clk => clk_25MHz, reset => reset, blank => blank, VS => VSYNC_temp,
-                           hcount => hcount, vcount => vcount, RED => RED_t, GREEN => GREEN_t, 
-                           BLUE => BLUE_t);
+t1 : title_block PORT MAP (clk => clk_25MHz, reset => reset, blank => blank,
+                           hcount => hcount, vcount => vcount,
+                           RED => RED_t, GREEN => GREEN_t, BLUE => BLUE_t);
 
-m1 : merge_display PORT MAP (Red_a => RED_s, Red_b => RED_b, Red_c => RED_r, Red_d => RED_g, Red_e => RED_t,
-                             Green_a => GREEN_s, Green_b => GREEN_b, Green_c => GREEN_r, Green_d => GREEN_g, Green_e => GREEN_t,
-                             Blue_a => BLUE_s, Blue_b => BLUE_b, Blue_c => BLUE_r, Blue_d => BLUE_g, Blue_e => BLUE_t, 
+m1 : merge_display PORT MAP (Red_back => RED_s, Red_o1 => RED_b, Red_o2 => RED_r, Red_o3 => RED_g, Red_tle => RED_t,
+                             Green_back => GREEN_s, Green_o1 => GREEN_b, Green_o2 => GREEN_r, Green_o3 => GREEN_g, Green_tle => GREEN_t,
+                             Blue_back => BLUE_s, Blue_o1 => BLUE_b, Blue_o2 => BLUE_r, Blue_o3 => BLUE_g, Blue_tle => BLUE_t,
                              R3 => R3, R2 => R2, R1 => R1,
                              R0 => R0, G3 => G3, G2 => G2, G1 => G1, G0 => G0, B3 => B3,
                              B2 => B2, B1 => B1, B0 => B0);
 
-VSYNC <= VSYNC_temp;          
+VSYNC <= VSYNC_temp;
 
 
 end Behavioral;
