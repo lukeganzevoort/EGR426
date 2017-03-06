@@ -37,28 +37,10 @@ end static_background;
 
 architecture Behavioral of static_background is
 begin
- -- process(hcount,vcount,blank)
- -- begin
- --  if((hcount >= 0 and hcount <= 639 and blank = '0') and    -- Upper/Lower Horizontal border
- --     ((vcount >= 0 and vcount <= 20) or (vcount >= 459 and vcount <= 479))) then
- --     Green <= X"0";		-- Blue + Red makes MAGENTA
- --  	 Blue <= X"F";
- --  	 Red <= X"F";
- --  elsif((vcount >= 21 and vcount <= 458 and blank = '0') and    -- Left/Right Vertical border
- --        ((hcount >= 0 and hcount <= 25) or (hcount >= 620 and hcount <= 639))) then
- --     Green <= X"0";		-- Blue + Red makes MAGENTA
- --     Blue <= X"F";
- --     Red <= X"F";
- --  else
- --     Green <= X"0";
- --     Blue <= X"0";
- --     Red <= X"0";
- --  end if;
- -- end process;
 
  Background: process(vcount,hcount,blank)
  begin
-   -- Main grid
+   -- Main grid box
    if (hcount = 160 and vcount <= 400 and vcount >= 120 and blank = '0')
    or (hcount = 480 and vcount <= 400 and vcount >= 80 and blank = '0')
    or (vcount = 80 and hcount < 480 and hcount > 160 and blank = '0')

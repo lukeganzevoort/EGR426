@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Mon Mar 06 13:22:54 2017
+| Date         : Mon Mar 06 16:38:23 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vgademo4_all_top_control_sets_placed.rpt
 | Design       : vgademo4_all_top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |    36 |
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    30 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              27 |            9 |
+| No           | No                    | No                     |              28 |           12 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              12 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              34 |           15 |
-| Yes          | Yes                   | No                     |              11 |            5 |
+| Yes          | No                    | Yes                    |              23 |           11 |
+| Yes          | Yes                   | No                     |              11 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -49,12 +49,11 @@ Table of Contents
 |    Clock Signal   |          Enable Signal          |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
 +-------------------+---------------------------------+-------------------------+------------------+----------------+
 |  c1/inst/clk_out1 |                                 | v1/HS0                  |                1 |              1 |
-|  VSYNC_OBUF_BUFG  | g11/Object_X_pos[10]_i_1__1_n_0 | reset_IBUF              |                4 |             11 |
-|  VSYNC_OBUF_BUFG  | r11/Object_X_pos[10]_i_1__0_n_0 | reset_IBUF              |                5 |             11 |
 |  c1/inst/clk_out1 |                                 | v1/hcounter[10]_i_1_n_0 |                7 |             11 |
-|  c1/inst/clk_out1 | v1/vcounter[10]_i_2_n_0         | v1/vcounter[10]_i_1_n_0 |                5 |             11 |
-|  VSYNC_OBUF_BUFG  | b11/Object_X_pos[10]_i_1_n_0    | reset_IBUF              |                6 |             12 |
-|  c1/inst/clk_out1 |                                 |                         |                9 |             27 |
+|  c1/inst/clk_out1 | v1/vcounter[10]_i_2_n_0         | v1/vcounter[10]_i_1_n_0 |                4 |             11 |
+|  v1/VSYNC_OBUF    | r11/Object_X_pos[10]_i_1__0_n_0 | reset_IBUF              |                5 |             11 |
+|  v1/VSYNC_OBUF    | b11/Object_X_pos[10]_i_1_n_0    | reset_IBUF              |                6 |             12 |
+|  c1/inst/clk_out1 |                                 |                         |               12 |             28 |
 +-------------------+---------------------------------+-------------------------+------------------+----------------+
 
 
@@ -62,7 +61,7 @@ Table of Contents
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 1      |                     1 |
-| 11     |                     4 |
+| 11     |                     3 |
 | 12     |                     1 |
 | 16+    |                     1 |
 +--------+-----------------------+

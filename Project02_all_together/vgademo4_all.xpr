@@ -60,6 +60,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/Green_cube.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/title_block.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -90,12 +96,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Green_cube.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/Blue_cube.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -104,6 +104,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/vgademo4_all_top.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/draw_arc.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -185,23 +192,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom.veo"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom_stub.v"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="synth/title_rom.vhd"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="sim/title_rom.v"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="misc/blk_mem_gen_v8_3.vhd"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="summary.log"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom.vho"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="simulation/blk_mem_gen_v8_3.v"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom.mif"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="doc/blk_mem_gen_v8_3_changelog.txt"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.ip_user_files/mem_init_files/rom.coe"/>
-        <CompFileExtendedInfo CompFileName="title_rom.xci" FileRelPathName="title_rom.xml"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="title_rom"/>
@@ -274,9 +264,7 @@
     </Run>
     <Run Id="rom_chars_synth_1" Type="Ft3:Synth" SrcSet="rom_chars" Part="xc7a35tcpg236-1" ConstrsSet="rom_chars" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/rom_chars_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -330,9 +318,7 @@
     </Run>
     <Run Id="rom_chars_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="rom_chars" Description="Default settings for Implementation." SynthRun="rom_chars_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
