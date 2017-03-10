@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Mon Mar 06 16:39:00 2017
+| Date             : Wed Mar 08 22:47:51 2017
 | Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo4_all_top_power_routed.rpt -pb vgademo4_all_top_power_summary_routed.pb -rpx vgademo4_all_top_power_routed.rpx
 | Design           : vgademo4_all_top
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.003 |     1550 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1036 |     20800 |            4.98 |
+| Slice Logic    |     0.003 |     1539 |       --- |             --- |
+|   LUT as Logic |     0.002 |     1027 |     20800 |            4.94 |
 |   CARRY4       |    <0.001 |      238 |      8150 |            2.92 |
 |   Register     |    <0.001 |       74 |     41600 |            0.18 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
-|   Others       |     0.000 |       20 |       --- |             --- |
-| Signals        |     0.002 |     1375 |       --- |             --- |
+|   Others       |     0.000 |       18 |       --- |             --- |
+| Signals        |     0.002 |     1367 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | DSPs           |    <0.001 |        6 |        90 |            6.67 |
@@ -147,7 +147,8 @@ Table of Contents
 |   b11                                          |    <0.001 |
 |   c1                                           |     0.116 |
 |     inst                                       |     0.116 |
-|   g11                                          |     0.002 |
+|   g11                                          |     0.004 |
+|     M1                                         |     0.004 |
 |   r11                                          |    <0.001 |
 |   t1                                           |    <0.001 |
 |     my_rom                                     |    <0.001 |

@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Mon Mar 06 16:36:44 2017
-# Process ID: 5632
+# Start of session at: Wed Mar 08 22:45:26 2017
+# Process ID: 1716
 # Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1
 # Command line: vivado.exe -log vgademo4_all_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vgademo4_all_top.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/vgademo4_all_top.vds
@@ -14,20 +14,21 @@ Command: synth_design -top vgademo4_all_top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/rom_chars/rom_chars.dcp]
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9560 
+INFO: Helper process launched with PID 992 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 283.574 ; gain = 73.859
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 283.867 ; gain = 74.605
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:70]
 WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:49]
 WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'vgademo4_all_top' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:38]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'c1' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'c1' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
 INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'v1' of component 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:95]
 INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
 INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (1#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
@@ -46,26 +47,36 @@ WARNING: [Synth 8-614] signal 'Object_Y_pos' is read in the process but is not i
 INFO: [Synth 8-256] done synthesizing module 'Red_cube' (4#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:38]
 INFO: [Synth 8-3491] module 'Green_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:34' bound to instance 'g11' of component 'Green_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:108]
 INFO: [Synth 8-638] synthesizing module 'Green_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Green_cube' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:40]
+	Parameter x_px bound to: 80 - type: integer 
+	Parameter y_px bound to: 100 - type: integer 
+	Parameter radius_px bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'drawCircle' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:36' bound to instance 'M1' of component 'drawCircle' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'drawCircle' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:42]
+	Parameter x_px bound to: 80 - type: integer 
+	Parameter y_px bound to: 100 - type: integer 
+	Parameter radius_px bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'drawCircle' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Green_cube' (6#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:40]
 INFO: [Synth 8-3491] module 'title_block' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:24' bound to instance 't1' of component 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:112]
 INFO: [Synth 8-638] synthesizing module 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
-INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'MY_CHAR_DRIVER' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:34' bound to instance 'char_driver' of component 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:58]
 INFO: [Synth 8-638] synthesizing module 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'MY_CHAR_DRIVER' (6#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'title_block' (7#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'MY_CHAR_DRIVER' (7#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'title_block' (8#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
 INFO: [Synth 8-3491] module 'merge_display' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:33' bound to instance 'm1' of component 'merge_display' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:116]
 INFO: [Synth 8-638] synthesizing module 'merge_display' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'merge_display' (8#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'vgademo4_all_top' (9#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'merge_display' (9#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'vgademo4_all_top' (10#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:38]
 WARNING: [Synth 8-3331] design title_block has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port left_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port right_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port VS
+WARNING: [Synth 8-3331] design Green_cube has unconnected port blank
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 321.742 ; gain = 112.027
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 322.031 ; gain = 112.770
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -75,10 +86,10 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 321.742 ; gain = 112.027
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 322.031 ; gain = 112.770
 ---------------------------------------------------------------------------------
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/rom_chars/rom_chars.dcp]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'c1' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:92]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'rom_chars' instantiated as 't1/my_rom' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
@@ -86,10 +97,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
 Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]
 Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vgademo4_all_top_propImpl.xdc].
@@ -99,61 +110,61 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 627.004 ; gain = 0.000
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/rom_chars/rom_chars.dcp]
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 627.309 ; gain = 0.000
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/rom_chars/rom_chars.dcp]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 627.004 ; gain = 417.289
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.309 ; gain = 418.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 627.004 ; gain = 417.289
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.309 ; gain = 418.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-5632-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-1716-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 627.004 ; gain = 417.289
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.309 ; gain = 418.047
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "Red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:58]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:57]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 627.004 ; gain = 417.289
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 627.309 ; gain = 418.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -229,7 +240,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 7     
-Module Green_cube 
+Module drawCircle 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 8     
@@ -263,40 +274,41 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:82]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:84]
-DSP Report: Generating DSP d0, operation Mode is: A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: Generating DSP d0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator d0 is absorbed into DSP d0.
-DSP Report: operator d0 is absorbed into DSP d0.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:78]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd:80]
+DSP Report: Generating DSP M1/d0, operation Mode is: A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: Generating DSP M1/d0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
+DSP Report: operator M1/d0 is absorbed into DSP M1/d0.
 WARNING: [Synth 8-3331] design title_block has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port left_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port right_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port VS
+WARNING: [Synth 8-3331] design Green_cube has unconnected port blank
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[0]) is unused and will be removed from module Red_cube.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 627.004 ; gain = 417.289
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 627.309 ; gain = 418.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -335,10 +347,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'c1/clk_out1' to pin 'c1/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 635.203 ; gain = 425.488
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 635.504 ; gain = 426.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 647.516 ; gain = 437.801
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 647.715 ; gain = 438.453
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,7 +362,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,7 +386,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -387,7 +399,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,25 +411,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -439,12 +451,12 @@ Report Cell Usage:
 |2     |rom_chars_bbox |     1|
 |3     |CARRY4         |   238|
 |4     |DSP48E1        |     6|
-|5     |LUT1           |   313|
-|6     |LUT2           |   429|
-|7     |LUT3           |   226|
-|8     |LUT4           |   154|
-|9     |LUT5           |    42|
-|10    |LUT6           |   153|
+|5     |LUT1           |   310|
+|6     |LUT2           |   426|
+|7     |LUT3           |   227|
+|8     |LUT4           |   155|
+|9     |LUT5           |    40|
+|10    |LUT6           |   150|
 |11    |MUXF7          |     2|
 |12    |MUXF8          |     1|
 |13    |FDCE           |    19|
@@ -458,19 +470,20 @@ Report Instance Areas:
 +------+---------+----------------------+------+
 |      |Instance |Module                |Cells |
 +------+---------+----------------------+------+
-|1     |top      |                      |  1655|
+|1     |top      |                      |  1646|
 |2     |  b11    |Blue_cube             |    71|
-|3     |  g11    |Green_cube            |   518|
-|4     |  r11    |Red_cube              |    65|
-|5     |  t1     |title_block           |    33|
-|6     |  v1     |vga_controller_640_60 |   375|
+|3     |  g11    |Green_cube            |  1070|
+|4     |    M1   |drawCircle            |  1070|
+|5     |  r11    |Red_cube              |    65|
+|6     |  t1     |title_block           |    33|
+|7     |  v1     |vga_controller_640_60 |   357|
 +------+---------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 667.563 ; gain = 151.355
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 667.563 ; gain = 457.848
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 665.738 ; gain = 149.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 665.738 ; gain = 456.477
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -480,9 +493,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-87 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+91 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 667.563 ; gain = 457.848
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 665.738 ; gain = 456.477
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/vgademo4_all_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 667.563 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 06 16:37:39 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 665.738 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 08 22:46:25 2017...

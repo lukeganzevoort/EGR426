@@ -23,6 +23,7 @@ set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR
 add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp
 set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp]
 read_vhdl -library xil_defaultlib {
+  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/drawCircle.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd
