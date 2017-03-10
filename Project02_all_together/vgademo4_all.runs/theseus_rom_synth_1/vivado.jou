@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Mar 10 16:27:34 2017
+# Process ID: 3728
+# Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/theseus_rom_synth_1
+# Command line: vivado.exe -log theseus_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source theseus_rom.tcl
+# Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/theseus_rom_synth_1/theseus_rom.vds
+# Journal file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/theseus_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source theseus_rom.tcl -notrace

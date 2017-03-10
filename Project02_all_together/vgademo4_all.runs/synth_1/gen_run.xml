@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1489031124">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1489179316">
   <File Type="RDS-PROPCONSTRS" Name="vgademo4_all_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="vgademo4_all_top.tcl"/>
   <File Type="RDS-RDS" Name="vgademo4_all_top.vds"/>
@@ -75,12 +75,6 @@
     <File Path="$PSRCDIR/sources_1/new/draw_arc.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/vgademo4_all.ip_user_files/mem_init_files/rom.coe">
-      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

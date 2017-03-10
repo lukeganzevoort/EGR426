@@ -1,0 +1,3 @@
+vhdl xil_defaultlib "../../../ip/theseus_rom/theseus_rom_sim_netlist.vhdl" 
+
+nosort

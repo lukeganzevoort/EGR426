@@ -34,6 +34,7 @@ use IEEE.numeric_std.ALL;
 entity Green_cube is
 Port (left_btn,right_btn,reset,VS,blank : in STD_LOGIC;
       hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
+      clk_25MHz : in std_logic;
       Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end Green_cube;
 
@@ -46,48 +47,55 @@ architecture Behavioral of Green_cube is
   component drawCircle is
     generic ( x_px, y_px, radius_px : integer);
     port( hcount, vcount : in std_logic_vector(10 downto 0);
+      clk_25MHz : in std_logic;
       out_px : out std_logic );
   end component;
 
-  -- function  sqrt  ( d : UNSIGNED ) return UNSIGNED is
-  --   variable a : unsigned(31 downto 0):= d;  --original input.
-  --   variable q : unsigned(15 downto 0):=(others => '0');  --result.
-  --   variable left,right,r : unsigned(17 downto 0):=(others => '0');  --input to adder/sub.r-remainder.
-  --   variable i : integer:=0;
-  -- begin
-  --   for i in 0 to 15 loop
-  --     right(0):='1';
-  --     right(1):=r(17);
-  --     right(17 downto 2):=q;
-  --     left(1 downto 0):=a(31 downto 30);
-  --     left(17 downto 2):=r(15 downto 0);
-  --     a(31 downto 2):=a(29 downto 0);  --shifting by 2 bit.
-  --     if ( r(17) = '1') then
-  --       r := left + right;
-  --     else
-  --       r := left - right;
-  --     end if;
-  --     q(15 downto 1) := q(14 downto 0);
-  --     q(0) := not r(17);
-  --   end loop;
-  --   return q;
-  -- end sqrt;
+  component theseus_rom is
+    PORT (
+      clka : IN STD_LOGIC;
+      addra : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+      douta : OUT STD_LOGIC_VECTOR(29 DOWNTO 0)
+    );
+  end component;
+
   signal px : std_logic := '0';
+  signal ROM_ADDRESS : STD_LOGIC_VECTOR(7 downto 0);
+  signal ROM_DATA : STD_LOGIC_VECTOR(15 downto 0);
+  constant size : integer := 30;
+  constant size2 : integer := (size/2);
 
 begin
 
-  M1: drawCircle
-    generic map ( x_px => 80, y_px => 100, radius_px => 15)
-    port map( hcount => hcount, vcount => vcount, out_px => px );
+  ROM_Theseus : theseus_rom
+    port map ( clka => clk_25MHz, addra => ROM_ADDRESS, douta => ROM_DATA);
 
-  process(px)
+  -- M1: drawCircle
+  --   generic map ( x_px => 80, y_px => 100, radius_px => 15)
+  --   port map( hcount => hcount, vcount => vcount, out_px => px );
+
+  process(clk_25MHz)
   begin
-    if(px = '1') then
+    if(rising_edge(clk_25MHz)
+      and vcount > 100-size2 and vcount <= 100+size2
+      and hcount > 100-size2 and vcount <= 100+size2) then
+
+      ROM_ADDRESS <= vcount + size2 - 100;
+
       Green <= X"F";
-    else
-      Green <= X"0";
     end if;
   end process;
+
+
+
+  -- process(px)
+  -- begin
+  --   if(px = '1') then
+  --     Green <= X"F";
+  --   else
+  --     Green <= X"0";
+  --   end if;
+  -- end process;
 
   --  draw_circle:process(hcount,vcount,blank)       -- Procedural block for displaying the GREEN object
   --    variable row : integer := 0;
