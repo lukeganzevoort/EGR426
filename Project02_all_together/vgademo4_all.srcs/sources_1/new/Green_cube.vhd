@@ -21,6 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.numeric_std.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -40,9 +41,9 @@ end Green_cube;
 
 architecture Behavioral of Green_cube is
 
-  -- signal Object_X_pos : STD_LOGIC_VECTOR(10 downto 0) := B"00000011110"; -- Decimal 30
-  -- signal Object_Y_pos : STD_LOGIC_VECTOR(10 downto 0) := B"00110011010"; -- Decimal 410
-  -- constant radius : integer := "15";
+  signal Object_X_pos : STD_LOGIC_VECTOR(10 downto 0) := B"00000011110"; -- Decimal 30
+  signal Object_Y_pos : STD_LOGIC_VECTOR(10 downto 0) := B"00110011010"; -- Decimal 410
+  constant radius : integer := 15;
 
   component drawCircle is
     generic ( x_px, y_px, radius_px : integer);
@@ -60,33 +61,87 @@ architecture Behavioral of Green_cube is
   end component;
 
   signal px : std_logic := '0';
-  signal ROM_ADDRESS : STD_LOGIC_VECTOR(7 downto 0);
-  signal ROM_DATA : STD_LOGIC_VECTOR(15 downto 0);
+  signal ROM_ADDRESS : STD_LOGIC_VECTOR(5 downto 0);
+  signal ROM_DATA : STD_LOGIC_VECTOR(29 downto 0);
+  signal posX, posY : integer range 1 to 15 := 1;
+  signal btnL, btnR, btnLp, btnRp : std_logic := '0';
   constant size : integer := 30;
   constant size2 : integer := (size/2);
+  shared variable cnt : integer range 0 to 12500001;
 
 begin
 
-  ROM_Theseus : theseus_rom
-    port map ( clka => clk_25MHz, addra => ROM_ADDRESS, douta => ROM_DATA);
+
+
+  -- ROM_Theseus : theseus_rom
+  --   port map ( clka => clk_25MHz, addra => ROM_ADDRESS, douta => ROM_DATA);
 
   -- M1: drawCircle
   --   generic map ( x_px => 80, y_px => 100, radius_px => 15)
   --   port map( hcount => hcount, vcount => vcount, out_px => px );
 
-  process(clk_25MHz)
+  process(hcount,vcount, posX, posY, clk_25MHz)
+    variable vcnt, hcnt : integer := 0;
   begin
-    if(rising_edge(clk_25MHz)
-      and vcount > 100-size2 and vcount <= 100+size2
-      and hcount > 100-size2 and vcount <= 100+size2) then
+    -- if((vcount - (posY*40+20) + 15) >= 0 and (vcount - (posY*40+20) + 15) <= 30
+    -- and (hcount - (posX*40+20) + 15) >= 0 and (hcount - (posX*40+20) + 15) <= 30) then
+    if(vcount < posY*40+15 and vcount > posY*40-15 and
+      hcount < posX*40+15 and hcount > posX*40-15) then
 
-      ROM_ADDRESS <= vcount + size2 - 100;
+      vcnt := conv_integer(vcount);
+      hcnt := conv_integer(hcount);
+
+      --ROM_ADDRESS <= conv_std_logic_vector(vcnt + size2 - 100,6);
 
       Green <= X"F";
+    else
+      Green <= X"0";
     end if;
   end process;
 
+  --process(left_btn,right_btn, clk_25MHz)
+  process(clk_25MHz)
+  begin
+    if(rising_edge(clk_25MHz)) then
 
+      if (right_btn = '1' and btnRp = '0') then
+        btnRp <= '1';
+        if (posX < 15) then
+          posX <= posX + 1;
+        else
+          posX <= 1;
+        end if;
+      elsif(right_btn ='0' and btnRp = '1') then
+        btnRp <= '0';
+      end if;
+
+      if (left_btn = '1' and btnLp = '0') then
+        btnLp <= '1';
+        if (posX > 1) then
+          posX <= posX - 1;
+        else
+          posX <= 15;
+        end if;
+      elsif(left_btn ='0' and btnLp = '1') then
+        btnLp <= '0';
+      end if;
+    end if;
+  end process;
+  --
+  -- process(btnL,btnR)
+  -- begin
+  --   if((btnL = '1')) then
+  --     if(posX < 10) then
+  --       posX <= posX + 1;
+  --     end if;
+  --   end if;
+  --
+  --   if((btnR = '1')) then
+  --     if(posX > 6) then
+  --       posX <= posX - 1;
+  --     end if;
+  --   end if;
+  -- end process;
 
   -- process(px)
   -- begin
