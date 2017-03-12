@@ -46,7 +46,7 @@ architecture Behavioral of MY_CHAR_DRIVER is
 begin
   -- char_col <= hcount(9 downto 3);  -- Character column in [0,79]
   -- char_row <= vcount(8 downto 3);  -- Character row in [0,59]
-  process
+  process(vcount,hcount)
   begin
       if(vcount >= vtop and vcount < vbot
 				and hcount >= 128 and hcount < 144) then

@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 --use UNISIM.VComponents.all;
 
 entity Green_cube is
-Port (left_btn,right_btn,reset,VS,blank : in STD_LOGIC;
+Port (left_btn,right_btn,up_btn,down_btn,reset,VS,blank : in STD_LOGIC;
       hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
       clk_25MHz : in std_logic;
       Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
@@ -63,8 +63,9 @@ architecture Behavioral of Green_cube is
   signal px : std_logic := '0';
   signal ROM_ADDRESS : STD_LOGIC_VECTOR(5 downto 0);
   signal ROM_DATA : STD_LOGIC_VECTOR(29 downto 0);
-  signal posX, posY : integer range 1 to 15 := 1;
-  signal btnL, btnR, btnLp, btnRp : std_logic := '0';
+  signal posX : integer range 1 to 16 := 6;
+  signal posY : integer range 1 to 12 := 4;
+  signal btnL, btnR, btnLp, btnRp, btnUp, btnDp : std_logic := '0';
   constant size : integer := 30;
   constant size2 : integer := (size/2);
   shared variable cnt : integer range 0 to 12500001;
@@ -85,8 +86,8 @@ begin
   begin
     -- if((vcount - (posY*40+20) + 15) >= 0 and (vcount - (posY*40+20) + 15) <= 30
     -- and (hcount - (posX*40+20) + 15) >= 0 and (hcount - (posX*40+20) + 15) <= 30) then
-    if(vcount < posY*40+15 and vcount > posY*40-15 and
-      hcount < posX*40+15 and hcount > posX*40-15) then
+    if(vcount < posY*40-20+15 and vcount > posY*40-20-15 and
+      hcount < posX*40-20+15 and hcount > posX*40-20-15) then
 
       vcnt := conv_integer(vcount);
       hcnt := conv_integer(hcount);
@@ -99,14 +100,14 @@ begin
     end if;
   end process;
 
-  --process(left_btn,right_btn, clk_25MHz)
+  -- Right button control
   process(clk_25MHz)
   begin
     if(rising_edge(clk_25MHz)) then
 
       if (right_btn = '1' and btnRp = '0') then
         btnRp <= '1';
-        if (posX < 15) then
+        if (posX < 16) then
           posX <= posX + 1;
         else
           posX <= 1;
@@ -120,13 +121,44 @@ begin
         if (posX > 1) then
           posX <= posX - 1;
         else
-          posX <= 15;
+          posX <= 16;
         end if;
       elsif(left_btn ='0' and btnLp = '1') then
         btnLp <= '0';
       end if;
+
     end if;
   end process;
+
+  process(clk_25MHz)
+  begin
+    if(rising_edge(clk_25MHz)) then
+
+      if (up_btn = '1' and btnUp = '0') then
+        btnUp <= '1';
+        if (posY > 1) then
+          posY <= posY - 1;
+        else
+          posY <= 12;
+        end if;
+      elsif(up_btn ='0' and btnUp = '1') then
+        btnUp <= '0';
+      end if;
+
+      if (down_btn = '1' and btnDp = '0') then
+        btnDp <= '1';
+        if (posY < 12) then
+          posY <= posY + 1;
+        else
+          posY <= 1;
+        end if;
+      elsif(down_btn ='0' and btnDp = '1') then
+        btnDp <= '0';
+      end if;
+
+    end if;
+  end process;
+
   --
   -- process(btnL,btnR)
   -- begin
