@@ -52,6 +52,12 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/character_slide.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/MY_CHAR_DRIVER.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../Project02_characters/vgademo2_char.srcs/sources_1/new/MY_CHAR_DRIVER.vhd"/>
@@ -60,13 +66,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/clk_div_25k.vhd">
+      <File Path="$PSRCDIR/sources_1/new/Green_cube.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Green_cube.vhd">
+      <File Path="$PSRCDIR/sources_1/new/clk_div_25k.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

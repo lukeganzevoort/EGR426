@@ -21,12 +21,13 @@ add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.src
 add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.ip_user_files/mem_init_files/rom.coe
 add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
 set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
-add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp
-set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp]
+add_files -quiet C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp
+set_property used_in_implementation false [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp]
 read_vhdl -library xil_defaultlib {
+  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd
-  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd
+  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd

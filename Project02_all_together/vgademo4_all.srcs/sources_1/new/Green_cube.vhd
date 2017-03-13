@@ -60,11 +60,21 @@ architecture Behavioral of Green_cube is
     );
   end component;
 
+  component character_slide is
+    generic(startX, startY : integer);
+    Port(clk_25MHz : in std_logic;
+      next_positionX : in integer range 1 to 16;
+      next_positionY : in integer range 1 to 12;
+      character_centerX : out STD_LOGIC_VECTOR(10 downto 0);
+      Character_centerY : out STD_LOGIC_VECTOR(10 downto 0));
+  end component;
+
   signal px : std_logic := '0';
   signal ROM_ADDRESS : STD_LOGIC_VECTOR(5 downto 0);
   signal ROM_DATA : STD_LOGIC_VECTOR(29 downto 0);
   signal posX : integer range 1 to 16 := 6;
   signal posY : integer range 1 to 12 := 4;
+  signal center_px_X, center_px_Y : STD_LOGIC_VECTOR(10 downto 0);
   signal btnL, btnR, btnLp, btnRp, btnUp, btnDp : std_logic := '0';
   constant size : integer := 30;
   constant size2 : integer := (size/2);
@@ -72,6 +82,11 @@ architecture Behavioral of Green_cube is
 
 begin
 
+  animation: character_slide
+    generic map(6,4)
+    port map(clk_25MHz => clk_25MHz,
+      next_positionX => posX, next_positionY => posY,
+      character_centerX => center_px_X, Character_centerY => center_px_Y);
 
 
   -- ROM_Theseus : theseus_rom
@@ -81,13 +96,15 @@ begin
   --   generic map ( x_px => 80, y_px => 100, radius_px => 15)
   --   port map( hcount => hcount, vcount => vcount, out_px => px );
 
-  process(hcount,vcount, posX, posY, clk_25MHz)
+  process(hcount,vcount, center_px_Y, center_px_X, clk_25MHz)
     variable vcnt, hcnt : integer := 0;
   begin
     -- if((vcount - (posY*40+20) + 15) >= 0 and (vcount - (posY*40+20) + 15) <= 30
     -- and (hcount - (posX*40+20) + 15) >= 0 and (hcount - (posX*40+20) + 15) <= 30) then
-    if(vcount < posY*40-20+15 and vcount > posY*40-20-15 and
-      hcount < posX*40-20+15 and hcount > posX*40-20-15) then
+    --if(vcount < posY*40-20+15 and vcount > posY*40-20-15 and
+    --  hcount < posX*40-20+15 and hcount > posX*40-20-15) then
+    if(vcount < center_px_Y+15 and vcount > center_px_Y-15 and
+      hcount < center_px_X+15 and hcount > center_px_X-15) then
 
       vcnt := conv_integer(vcount);
       hcnt := conv_integer(hcount);
