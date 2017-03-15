@@ -66,15 +66,20 @@ architecture Behavioral of Green_cube is
       next_positionX : in integer range 1 to 16;
       next_positionY : in integer range 1 to 12;
       character_centerX : out STD_LOGIC_VECTOR(10 downto 0);
-      Character_centerY : out STD_LOGIC_VECTOR(10 downto 0));
+      Character_centerY : out STD_LOGIC_VECTOR(10 downto 0);
+      ready : out std_logic);
   end component;
 
+  constant startX : integer := 2;
+  constant startY : integer := 2;
   signal px : std_logic := '0';
   signal ROM_ADDRESS : STD_LOGIC_VECTOR(5 downto 0);
   signal ROM_DATA : STD_LOGIC_VECTOR(29 downto 0);
-  signal posX : integer range 1 to 16 := 6;
-  signal posY : integer range 1 to 12 := 4;
-  signal center_px_X, center_px_Y : STD_LOGIC_VECTOR(10 downto 0);
+  signal posX : integer range 1 to 16 := startX;
+  signal posY : integer range 1 to 12 := startY;
+  signal center_px_X : STD_LOGIC_VECTOR(10 downto 0) := "00011011100";
+  signal center_px_Y : STD_LOGIC_VECTOR(10 downto 0) := "00010001100";
+  signal ready : std_logic;
   signal btnL, btnR, btnLp, btnRp, btnUp, btnDp : std_logic := '0';
   constant size : integer := 30;
   constant size2 : integer := (size/2);
@@ -83,10 +88,11 @@ architecture Behavioral of Green_cube is
 begin
 
   animation: character_slide
-    generic map(6,4)
+    generic map(startX,startY)
     port map(clk_25MHz => clk_25MHz,
       next_positionX => posX, next_positionY => posY,
-      character_centerX => center_px_X, Character_centerY => center_px_Y);
+      character_centerX => center_px_X, Character_centerY => center_px_Y,
+      ready => ready);
 
 
   -- ROM_Theseus : theseus_rom
@@ -96,6 +102,8 @@ begin
   --   generic map ( x_px => 80, y_px => 100, radius_px => 15)
   --   port map( hcount => hcount, vcount => vcount, out_px => px );
 
+  -- Draw the character
+  -------------------------------------------------------------------
   process(hcount,vcount, center_px_Y, center_px_X, clk_25MHz)
     variable vcnt, hcnt : integer := 0;
   begin
@@ -117,59 +125,62 @@ begin
     end if;
   end process;
 
-  -- Right button control
+  -- Left and Right button control
+  -----------------------------------------------------------------
   process(clk_25MHz)
   begin
     if(rising_edge(clk_25MHz)) then
 
-      if (right_btn = '1' and btnRp = '0') then
+      if (right_btn = '1' and btnRp = '0' and ready = '1') then
         btnRp <= '1';
-        if (posX < 16) then
+        if (posX < 8) then
           posX <= posX + 1;
         else
           posX <= 1;
         end if;
-      elsif(right_btn ='0' and btnRp = '1') then
+      elsif(right_btn ='0' and btnRp = '1' and ready = '1') then
         btnRp <= '0';
       end if;
 
-      if (left_btn = '1' and btnLp = '0') then
+      if (left_btn = '1' and btnLp = '0' and ready = '1') then
         btnLp <= '1';
-        if (posX > 1) then
+        if (posX > 0) then
           posX <= posX - 1;
         else
-          posX <= 16;
+          posX <= 8;
         end if;
-      elsif(left_btn ='0' and btnLp = '1') then
+      elsif(left_btn ='0' and btnLp = '1' and ready = '1') then
         btnLp <= '0';
       end if;
 
     end if;
   end process;
 
+  -- Up and Down Btn Control
+  ---------------------------------------------------------------------
   process(clk_25MHz)
   begin
     if(rising_edge(clk_25MHz)) then
 
-      if (up_btn = '1' and btnUp = '0') then
+      if (up_btn = '1' and btnUp = '0' and ready = '1') then
         btnUp <= '1';
         if (posY > 1) then
           posY <= posY - 1;
         else
-          posY <= 12;
+          posY <= 8;
         end if;
-      elsif(up_btn ='0' and btnUp = '1') then
+      elsif(up_btn ='0' and btnUp = '1' and ready = '1') then
         btnUp <= '0';
       end if;
 
-      if (down_btn = '1' and btnDp = '0') then
+      if (down_btn = '1' and btnDp = '0' and ready = '1') then
         btnDp <= '1';
-        if (posY < 12) then
+        if (posY < 8) then
           posY <= posY + 1;
         else
           posY <= 1;
         end if;
-      elsif(down_btn ='0' and btnDp = '1') then
+      elsif(down_btn ='0' and btnDp = '1' and ready = '1') then
         btnDp <= '0';
       end if;
 

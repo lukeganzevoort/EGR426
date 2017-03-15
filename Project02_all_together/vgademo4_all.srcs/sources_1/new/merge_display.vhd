@@ -42,11 +42,11 @@ begin
 
   process
   begin
-    if((Red_o1 OR Blue_o1 OR Green_o1) /= "0000") then
+    if((Red_o1 AND Blue_o1 AND Green_o1) /= "0000") then
       R3 <= Red_o1(3); R2 <= Red_o1(2); R1 <= Red_o1(1); R0 <= Red_o1(0);
       B3 <= Blue_o1(3); B2 <= Blue_o1(2); B1 <= Blue_o1(1); B0 <= Blue_o1(0);
       G3 <= Green_o1(3); G2 <= Green_o1(2); G1 <= Green_o1(1); G0 <= Green_o1(0);
-    elsif((Red_o2 OR Blue_o2 OR Green_o2) /= "0000") then
+    elsif((Red_o2 or Blue_o2 or Green_o2) /= "0000") then
       R3 <= Red_o2(3); R2 <= Red_o2(2); R1 <= Red_o2(1); R0 <= Red_o2(0);
       B3 <= Blue_o2(3); B2 <= Blue_o2(2); B1 <= Blue_o2(1); B0 <= Blue_o2(0);
       G3 <= Green_o2(3); G2 <= Green_o2(2); G1 <= Green_o2(1); G0 <= Green_o2(0);

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Sun Mar 12 22:14:16 2017
+| Date             : Tue Mar 14 23:05:02 2017
 | Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo4_all_top_power_routed.rpt -pb vgademo4_all_top_power_summary_routed.pb -rpx vgademo4_all_top_power_routed.rpx
 | Design           : vgademo4_all_top
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.192 |
-| Dynamic (W)              | 0.120 |
+| Total On-Chip Power (W)  | 0.191 |
+| Dynamic (W)              | 0.119 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.0  |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.001 |      828 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      451 |     20800 |            2.17 |
-|   CARRY4       |    <0.001 |       70 |      8150 |            0.86 |
-|   Register     |    <0.001 |      171 |     41600 |            0.41 |
+| Slice Logic    |    <0.001 |      882 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      462 |     20800 |            2.22 |
+|   CARRY4       |    <0.001 |       89 |      8150 |            1.09 |
+|   Register     |    <0.001 |      198 |     41600 |            0.48 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
-|   Others       |     0.000 |       24 |       --- |             --- |
-| Signals        |    <0.001 |      649 |       --- |             --- |
+|   Others       |     0.000 |       25 |       --- |             --- |
+| Signals        |    <0.001 |      628 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       21 |       106 |           19.81 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.192 |          |           |                 |
+| Total          |     0.191 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |
+| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.077 |       0.064 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -94,7 +94,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -142,8 +142,7 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| vgademo4_all_top                               |     0.120 |
-|   b11                                          |    <0.001 |
+| vgademo4_all_top                               |     0.119 |
 |   bD                                           |    <0.001 |
 |   bL                                           |    <0.001 |
 |   bR                                           |    <0.001 |
@@ -154,6 +153,7 @@ Table of Contents
 |   g11                                          |    <0.001 |
 |     animation                                  |    <0.001 |
 |   r11                                          |    <0.001 |
+|     animation                                  |    <0.001 |
 |   t1                                           |    <0.001 |
 |     my_rom                                     |    <0.001 |
 |       U0                                       |    <0.001 |

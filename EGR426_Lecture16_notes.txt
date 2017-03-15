@@ -1,0 +1,11 @@
+EGR 426 - Lecture 16
+--------------------------------------
+Project #2 report
+1) Cover Page
+2) Schematic (top-level) (only instantiation in top-level)
+3) Description of each component
+4) 7-seg off
+5) No test bench/simulation
+6) You project folder
+-------------------------------------
+RTL - Register Transfer Level

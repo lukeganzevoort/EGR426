@@ -57,8 +57,10 @@ Port (reset,VS,blank : in STD_LOGIC; hcount,vcount : in STD_LOGIC_VECTOR(10 down
 end component;
 
 component Red_cube is
-Port (reset,VS,blank : in STD_LOGIC; hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
-      Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
+  Port (left_btn,right_btn,up_btn,down_btn,reset,VS,blank : in STD_LOGIC;
+        hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
+        clk_25MHz : in std_logic;
+        Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
 component Green_cube is
@@ -114,8 +116,10 @@ s1 : static_background PORT MAP (hcount => hcount, vcount => vcount, blank => bl
 b11 : Blue_cube PORT MAP (reset => reset, VS => VSYNC_temp, blank => blank, hcount => hcount,
                          vcount => vcount, RED => RED_b, GREEN => GREEN_b, BLUE => BLUE_b);
 
-r11 : Red_cube PORT MAP (reset => reset, VS => VSYNC_temp, blank => blank, hcount => hcount,
-                         vcount => vcount, RED => RED_r, GREEN => GREEN_r, BLUE => BLUE_r);
+r11 : Red_cube PORT MAP (left_btn => BtnLeft, right_btn => BtnRight,
+  up_btn => BtnUp, down_btn => BtnDown, reset => reset,
+  VS => VSYNC_temp, blank => blank, hcount => hcount, vcount => vcount,
+  clk_25MHz => clk_25MHz,RED => RED_r, GREEN => GREEN_r, BLUE => BLUE_r);
 
 g11 : Green_cube PORT MAP (left_btn => BtnLeft, right_btn => BtnRight,
   up_btn => BtnUp, down_btn => BtnDown, reset => reset,
