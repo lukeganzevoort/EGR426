@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Tue Mar 14 23:05:01 2017
+| Date         : Thu Mar 16 20:00:12 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file vgademo4_all_top_methodology_drc_routed.rpt -rpx vgademo4_all_top_methodology_drc_routed.rpx
 | Design       : vgademo4_all_top

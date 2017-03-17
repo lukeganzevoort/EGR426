@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Tue Mar 14 23:03:46 2017
+| Date         : Thu Mar 16 19:58:23 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file vgademo4_all_top_utilization_synth.rpt -pb vgademo4_all_top_utilization_synth.pb
 | Design       : vgademo4_all_top
@@ -172,6 +172,7 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
+| map_walls |    2 |
 | rom_chars |    1 |
 | clk_wiz_0 |    1 |
 +-----------+------+

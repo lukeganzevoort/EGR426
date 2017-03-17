@@ -9,3 +9,9 @@ Project #2 report
 6) You project folder
 -------------------------------------
 RTL - Register Transfer Level
+	ex: a <= b(1);
+	
+Subprograms
+* Procedures
+	return any number of values
+* Functions

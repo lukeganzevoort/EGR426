@@ -74,10 +74,10 @@ begin
 
 
   -- Check for walls
-  process(next_px_X,next_px_Y,now_px_X,now_px_Y)
-  begin
-    if()
-    ROM_ADDRESS <= (now_px_Y-140)/40;
+  -- process(next_px_X,next_px_Y,now_px_X,now_px_Y)
+  -- begin
+  --   if()
+  --     ROM_ADDRESS <= (now_px_Y-140)/40;
 
 
   -- Clock divider to reach 25kHz

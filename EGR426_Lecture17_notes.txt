@@ -1,0 +1,16 @@
+EGR 426 - Lecture 17
+--------------------------------------
+Due today (3/16/2017)
+* LA #8
+* LAB #2
+* Project 2 demo so far
+-------------------------------------
+
+LFSR 
+* used for random number generation, counters, error checking and correction
+
+MLS - Maximum Length Sequence
+	2^n-1 non zero bit different patterns
+	
+
+
