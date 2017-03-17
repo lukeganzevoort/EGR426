@@ -18,8 +18,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_cache_permissions disable [current_project]
-read_ip -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci
-set_property is_locked true [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+read_ip -quiet C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci
+set_property is_locked true [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
@@ -59,15 +59,15 @@ if { [catch {
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
-add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_stub.v -of_objects [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_stub.v -of_objects [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
-add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_stub.vhdl -of_objects [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_stub.vhdl -of_objects [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
-add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_sim_netlist.v -of_objects [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_sim_netlist.v -of_objects [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
-add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_sim_netlist.vhdl -of_objects [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls_sim_netlist.vhdl -of_objects [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
-add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls.dcp -of_objects [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
+add_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls.dcp -of_objects [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci]
 
 if {[file isdir C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.ip_user_files/ip/map_walls]} {
   catch { 

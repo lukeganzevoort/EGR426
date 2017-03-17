@@ -36,6 +36,8 @@ entity Green_cube is
 Port (left_btn,right_btn,up_btn,down_btn,reset,VS,blank : in STD_LOGIC;
       hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
       clk_25MHz : in std_logic;
+      theseus_X : in integer range 0 to 640 := 0;
+      theseus_Y : in integer range 0 to 480 := 0;
       Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end Green_cube;
 
@@ -107,12 +109,11 @@ begin
   process(hcount,vcount, center_px_Y, center_px_X, clk_25MHz)
     variable vcnt, hcnt : integer := 0;
   begin
-    -- if((vcount - (posY*40+20) + 15) >= 0 and (vcount - (posY*40+20) + 15) <= 30
-    -- and (hcount - (posX*40+20) + 15) >= 0 and (hcount - (posX*40+20) + 15) <= 30) then
-    --if(vcount < posY*40-20+15 and vcount > posY*40-20-15 and
-    --  hcount < posX*40-20+15 and hcount > posX*40-20-15) then
-    if(vcount < center_px_Y+15 and vcount > center_px_Y-15 and
-      hcount < center_px_X+15 and hcount > center_px_X-15) then
+
+    -- if(vcount < center_px_Y+15 and vcount > center_px_Y-15 and
+    --   hcount < center_px_X+15 and hcount > center_px_X-15) then
+    if(vcount < theseus_Y+15 and vcount > theseus_Y-15 and
+      hcount < theseus_X+15 and hcount > theseus_X-15) then
 
       vcnt := conv_integer(vcount);
       hcnt := conv_integer(hcount);

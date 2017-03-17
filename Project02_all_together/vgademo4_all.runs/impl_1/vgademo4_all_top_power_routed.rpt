@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Thu Mar 16 20:00:14 2017
+| Date             : Fri Mar 17 00:08:52 2017
 | Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo4_all_top_power_routed.rpt -pb vgademo4_all_top_power_summary_routed.pb -rpx vgademo4_all_top_power_routed.rpx
 | Design           : vgademo4_all_top
@@ -50,14 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      882 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      462 |     20800 |            2.22 |
-|   CARRY4       |    <0.001 |       89 |      8150 |            1.09 |
-|   Register     |    <0.001 |      198 |     41600 |            0.48 |
-|   F7/F8 Muxes  |    <0.001 |        3 |     32600 |           <0.01 |
-|   Others       |     0.000 |       25 |       --- |             --- |
-| Signals        |    <0.001 |      628 |       --- |             --- |
-| Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
+| Slice Logic    |    <0.001 |      569 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      302 |     20800 |            1.45 |
+|   CARRY4       |    <0.001 |       39 |      8150 |            0.48 |
+|   Register     |    <0.001 |      116 |     41600 |            0.28 |
+|   F7/F8 Muxes  |    <0.001 |        4 |     32600 |            0.01 |
+|   Others       |     0.000 |       21 |       --- |             --- |
+| Signals        |    <0.001 |      439 |       --- |             --- |
+| Block RAM      |    <0.001 |        1 |        50 |            2.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       21 |       106 |           19.81 |
 | Static Power   |     0.072 |          |           |                 |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.077 |       0.064 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,6 +143,14 @@ Table of Contents
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
 | vgademo4_all_top                               |     0.119 |
+|   GL                                           |    <0.001 |
+|     TheseusWallsX                              |    <0.001 |
+|       U0                                       |    <0.001 |
+|         inst_blk_mem_gen                       |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|             valid.cstr                         |    <0.001 |
+|               ramloop[0].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
 |   bD                                           |    <0.001 |
 |   bL                                           |    <0.001 |
 |   bR                                           |    <0.001 |
@@ -150,10 +158,6 @@ Table of Contents
 |   c1                                           |     0.116 |
 |     inst                                       |     0.116 |
 |   clk25k                                       |    <0.001 |
-|   g11                                          |    <0.001 |
-|     animation                                  |    <0.001 |
-|   r11                                          |    <0.001 |
-|     animation                                  |    <0.001 |
 |   t1                                           |    <0.001 |
 |     my_rom                                     |    <0.001 |
 |       U0                                       |    <0.001 |

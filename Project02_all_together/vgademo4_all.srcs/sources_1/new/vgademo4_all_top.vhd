@@ -60,6 +60,8 @@ component Red_cube is
   Port (left_btn,right_btn,up_btn,down_btn,reset,VS,blank : in STD_LOGIC;
         hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
         clk_25MHz : in std_logic;
+        minotaur_X : in integer range 0 to 640 := 0;
+        minotaur_Y : in integer range 0 to 480 := 0;
         Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
@@ -67,6 +69,8 @@ component Green_cube is
   Port (left_btn,right_btn,up_btn,down_btn,reset,VS,blank : in STD_LOGIC;
         hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
         clk_25MHz : in std_logic;
+        theseus_X : in integer range 0 to 640 := 0;
+        theseus_Y : in integer range 0 to 480 := 0;
         Red,Green,Blue : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 
@@ -93,6 +97,13 @@ component clk_divider_25kHz is
            clk_out25kHz : out STD_LOGIC);
 end component;
 
+component game_logic is
+  port(clk_25MHz : in std_logic := '0';
+    btn_u,btn_d,btn_l,btn_r : in std_logic := '0';
+    theseus_X,minotaur_X : out integer range 0 to 640 := 0;
+    theseus_Y,minotaur_Y : out integer range 0 to 480 := 0);
+end component;
+
 signal clk_25MHz,clk_25kHz,blank,VSYNC_temp : STD_LOGIC;
 signal hcount,vcount : STD_LOGIC_VECTOR(10 downto 0);
 signal RED_s,GREEN_s,BLUE_s : STD_LOGIC_VECTOR(3 downto 0);
@@ -101,6 +112,9 @@ signal RED_r,GREEN_r,BLUE_r : STD_LOGIC_VECTOR(3 downto 0);
 signal RED_g,GREEN_g,BLUE_g : STD_LOGIC_VECTOR(3 downto 0);
 signal RED_t,GREEN_t,BLUE_t : STD_LOGIC_VECTOR(3 downto 0);
 signal BtnLeft, BtnRight, BtnUp, BtnDown : std_logic;
+signal theseus_X,minotaur_X : integer range 0 to 640 := 0;
+signal theseus_Y,minotaur_Y : integer range 0 to 480 := 0;
+signal dummy : std_logic := '0';
 -- ----------------------------------------------------------------
 begin
 c1 : clk_wiz_0 PORT MAP (clk_in1 => clk_100MHz, reset => reset, clk_out1 => clk_25MHz,
@@ -116,15 +130,17 @@ s1 : static_background PORT MAP (hcount => hcount, vcount => vcount, blank => bl
 b11 : Blue_cube PORT MAP (reset => reset, VS => VSYNC_temp, blank => blank, hcount => hcount,
                          vcount => vcount, RED => RED_b, GREEN => GREEN_b, BLUE => BLUE_b);
 
-r11 : Red_cube PORT MAP (left_btn => BtnLeft, right_btn => BtnRight,
-  up_btn => BtnUp, down_btn => BtnDown, reset => reset,
+r11 : Red_cube PORT MAP (left_btn => dummy, right_btn => dummy,
+  up_btn => dummy, down_btn => dummy, reset => reset,
   VS => VSYNC_temp, blank => blank, hcount => hcount, vcount => vcount,
-  clk_25MHz => clk_25MHz,RED => RED_r, GREEN => GREEN_r, BLUE => BLUE_r);
+  clk_25MHz => clk_25MHz, minotaur_X => minotaur_X, minotaur_Y => minotaur_Y,
+  RED => RED_r, GREEN => GREEN_r, BLUE => BLUE_r);
 
-g11 : Green_cube PORT MAP (left_btn => BtnLeft, right_btn => BtnRight,
-  up_btn => BtnUp, down_btn => BtnDown, reset => reset,
+g11 : Green_cube PORT MAP (left_btn => dummy, right_btn => dummy,
+  up_btn => dummy, down_btn => dummy, reset => reset,
   VS => VSYNC_temp, blank => blank, hcount => hcount, vcount => vcount,
-  clk_25MHz => clk_25MHz,RED => RED_g, GREEN => GREEN_g, BLUE => BLUE_g);
+  clk_25MHz => clk_25MHz, theseus_X => theseus_X, theseus_Y => theseus_Y,
+  RED => RED_g, GREEN => GREEN_g, BLUE => BLUE_g);
 
 t1 : title_block PORT MAP (clk => clk_25MHz, reset => reset, blank => blank,
                            hcount => hcount, vcount => vcount,
@@ -152,6 +168,10 @@ bD : debounce port map (clk => clk_25kHz, rst => reset, x => down_btn,
 clk25k : clk_divider_25kHz port map (clk_in_100Mhz => clk_100MHz,
   clk_out25kHz => clk_25kHz);
 
+GL : game_logic port map (clk_25MHz => clk_25MHz,
+  btn_u => BtnUp, btn_d => BtnDown, btn_l => BtnLeft, btn_r => BtnRight,
+  theseus_X => theseus_X, minotaur_X => minotaur_X,
+  theseus_Y => theseus_Y, minotaur_Y => minotaur_Y);
 
 VSYNC <= VSYNC_temp;
 
