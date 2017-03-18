@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Fri Mar 17 00:06:47 2017
-# Process ID: 3960
+# Start of session at: Sat Mar 18 17:26:54 2017
+# Process ID: 8108
 # Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1
 # Command line: vivado.exe -log vgademo4_all_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vgademo4_all_top.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/vgademo4_all_top.vds
@@ -14,99 +14,109 @@ Command: synth_design -top vgademo4_all_top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/map_walls/map_walls.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/map_walls/map_walls.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/rom_chars/rom_chars.dcp]
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5056 
+INFO: Helper process launched with PID 10624 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 283.848 ; gain = 74.656
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 283.078 ; gain = 73.008
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'vgademo4_all_top' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:38]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'c1' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'v1' of component 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:123]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'c1' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'v1' of component 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
 INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (1#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd:88]
-INFO: [Synth 8-3491] module 'static_background' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/static_background.vhd:33' bound to instance 's1' of component 'static_background' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:127]
+INFO: [Synth 8-3491] module 'static_background' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/static_background.vhd:33' bound to instance 's1' of component 'static_background' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'static_background' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/static_background.vhd:38]
 INFO: [Synth 8-256] done synthesizing module 'static_background' (2#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/static_background.vhd:38]
-INFO: [Synth 8-3491] module 'Blue_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:33' bound to instance 'b11' of component 'Blue_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:130]
+INFO: [Synth 8-3491] module 'Blue_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:33' bound to instance 'b11' of component 'Blue_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:131]
 INFO: [Synth 8-638] synthesizing module 'Blue_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:38]
 WARNING: [Synth 8-614] signal 'Object_X_pos' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:43]
 WARNING: [Synth 8-614] signal 'Object_Y_pos' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'Blue_cube' (3#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd:38]
-INFO: [Synth 8-3491] module 'Red_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:34' bound to instance 'r11' of component 'Red_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:133]
+INFO: [Synth 8-3491] module 'Red_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:34' bound to instance 'r11' of component 'Red_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:134]
 INFO: [Synth 8-638] synthesizing module 'Red_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:43]
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:68]
-	Parameter startX bound to: 1 - type: integer 
-	Parameter startY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:35' bound to instance 'animation' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:45]
-	Parameter startX bound to: 1 - type: integer 
-	Parameter startY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'W1' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/map_walls_stub.vhdl:14]
-WARNING: [Synth 8-3848] Net ROM_ADDRESS in module/entity character_slide does not have driver. [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'character_slide' (4#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:45]
 WARNING: [Synth 8-614] signal 'minotaur_Y' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:81]
 WARNING: [Synth 8-614] signal 'minotaur_X' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'Red_cube' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:43]
-INFO: [Synth 8-3491] module 'Green_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:35' bound to instance 'g11' of component 'Green_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'Red_cube' (4#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd:43]
+INFO: [Synth 8-3491] module 'Green_cube' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:35' bound to instance 'g11' of component 'Green_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:140]
 INFO: [Synth 8-638] synthesizing module 'Green_cube' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:44]
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:88]
-	Parameter startX bound to: 2 - type: integer 
-	Parameter startY bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:35' bound to instance 'animation' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'character_slide__parameterized1' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:45]
-	Parameter startX bound to: 2 - type: integer 
-	Parameter startY bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'W1' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:63]
-WARNING: [Synth 8-3848] Net ROM_ADDRESS in module/entity character_slide__parameterized1 does not have driver. [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'character_slide__parameterized1' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:45]
 WARNING: [Synth 8-614] signal 'theseus_Y' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:109]
 WARNING: [Synth 8-614] signal 'theseus_X' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:109]
-INFO: [Synth 8-256] done synthesizing module 'Green_cube' (6#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:44]
-INFO: [Synth 8-3491] module 'title_block' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:24' bound to instance 't1' of component 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'Green_cube' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd:44]
+INFO: [Synth 8-3491] module 'title_block' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:24' bound to instance 't1' of component 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:146]
 INFO: [Synth 8-638] synthesizing module 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
-INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'MY_CHAR_DRIVER' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:34' bound to instance 'char_driver' of component 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:58]
 INFO: [Synth 8-638] synthesizing module 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'MY_CHAR_DRIVER' (7#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'title_block' (8#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
-INFO: [Synth 8-3491] module 'merge_display' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:33' bound to instance 'm1' of component 'merge_display' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'MY_CHAR_DRIVER' (6#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'title_block' (7#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:30]
+INFO: [Synth 8-3491] module 'merge_display' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:33' bound to instance 'm1' of component 'merge_display' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:150]
 INFO: [Synth 8-638] synthesizing module 'merge_display' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'merge_display' (9#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bL' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:156]
+INFO: [Synth 8-256] done synthesizing module 'merge_display' (8#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd:40]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bL' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:157]
 INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:30]
 WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (10#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:30]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bR' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:159]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bU' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:162]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bD' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:165]
-INFO: [Synth 8-3491] module 'clk_divider_25kHz' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd:14' bound to instance 'clk25k' of component 'clk_divider_25kHz' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (9#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:30]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bR' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:160]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bU' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:163]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd:25' bound to instance 'bD' of component 'debounce' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:166]
+INFO: [Synth 8-3491] module 'clk_divider_25kHz' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd:14' bound to instance 'clk25k' of component 'clk_divider_25kHz' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:169]
 INFO: [Synth 8-638] synthesizing module 'clk_divider_25kHz' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'clk_divider_25kHz' (11#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd:19]
-INFO: [Synth 8-3491] module 'game_logic' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:35' bound to instance 'GL' of component 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:42]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:67]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'game_logic' (12#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider_25kHz' (10#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd:19]
+INFO: [Synth 8-3491] module 'game_logic' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:35' bound to instance 'GL' of component 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:43]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/map_walls_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:87]
+	Parameter startX bound to: 2 - type: integer 
+	Parameter startY bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:35' bound to instance 'TheseusSlide' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:46]
+	Parameter startX bound to: 2 - type: integer 
+	Parameter startY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'character_slide' (11#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:46]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:100]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:104]
+	Parameter startX bound to: 1 - type: integer 
+	Parameter startY bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:35' bound to instance 'MinotaurSlide' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'character_slide__parameterized1' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:46]
+	Parameter startX bound to: 1 - type: integer 
+	Parameter startY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'character_slide__parameterized1' (11#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'game_logic' (12#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'vgademo4_all_top' (13#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:38]
+WARNING: [Synth 8-3331] design character_slide__parameterized1 has unconnected port reset
+WARNING: [Synth 8-3331] design character_slide has unconnected port reset
 WARNING: [Synth 8-3331] design title_block has unconnected port reset
+WARNING: [Synth 8-3331] design Green_cube has unconnected port left_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port right_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port up_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port down_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port VS
 WARNING: [Synth 8-3331] design Green_cube has unconnected port blank
+WARNING: [Synth 8-3331] design Green_cube has unconnected port clk_25MHz
+WARNING: [Synth 8-3331] design Red_cube has unconnected port left_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port right_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port up_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port down_btn
 WARNING: [Synth 8-3331] design Red_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Red_cube has unconnected port VS
 WARNING: [Synth 8-3331] design Red_cube has unconnected port blank
+WARNING: [Synth 8-3331] design Red_cube has unconnected port clk_25MHz
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 321.898 ; gain = 112.707
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 321.176 ; gain = 111.105
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -116,31 +126,31 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 321.898 ; gain = 112.707
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 321.176 ; gain = 111.105
 ---------------------------------------------------------------------------------
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/map_walls/map_walls.dcp]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'c1' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:120]
-WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'map_walls' instantiated as 'r11/animation/W1'. 4 instances of this cell are unresolved black boxes. [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:63]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'c1' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd:121]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'map_walls' instantiated as 'GL/TheseusWallsX'. 4 instances of this cell are unresolved black boxes. [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:83]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'rom_chars' instantiated as 't1/my_rom' [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd:54]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'r11/animation/W1'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'r11/animation/W1'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'g11/animation/W1'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'g11/animation/W1'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsX'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsX'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsY'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsY'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'c1'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 't1/my_rom'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsX'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsX'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsY'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/TheseusWallsY'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/MinotaurWallsX'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/MinotaurWallsX'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/MinotaurWallsY'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GL/MinotaurWallsY'
 Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]
 Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/constrs_1/new/vgatop_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vgademo4_all_top_propImpl.xdc].
@@ -150,40 +160,40 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 627.965 ; gain = 0.000
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/map_walls/map_walls.dcp]
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 626.426 ; gain = 0.000
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/map_walls/map_walls.dcp]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-3960-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/.Xil/Vivado-8108-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "Red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:70]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:71]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:70]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:71]
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'debounce'
 INFO: [Synth 8-5544] ROM "pb_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd:78]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:66]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:66]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd:67]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -195,7 +205,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'debounce'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,28 +225,28 @@ Detailed RTL Component Info :
 	   3 Input     11 Bit       Adders := 3     
 	   2 Input     10 Bit       Adders := 6     
 	   2 Input      9 Bit       Adders := 4     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 15    
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               11 Bit    Registers := 3     
 	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 9     
-	                1 Bit    Registers := 21    
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 3     
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 20    
-	   5 Input      4 Bit        Muxes := 5     
-	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	   5 Input      4 Bit        Muxes := 2     
 	  22 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
 	   2 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 4     
-	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 34    
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+	   4 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -270,19 +280,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 7     
-Module character_slide 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     19 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-	                9 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
 Module Red_cube 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -290,29 +287,6 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 6     
-	   3 Input      4 Bit        Muxes := 1     
-	   5 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-Module character_slide__parameterized1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     19 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-	                9 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
 Module Green_cube 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -320,18 +294,6 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
-+---Registers : 
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
-	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module MY_CHAR_DRIVER 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -352,17 +314,49 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module character_slide 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module character_slide__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 Module game_logic 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 9     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                4 Bit    Registers := 4     
-	                1 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 5     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 13    
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -379,12 +373,23 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design title_block has unconnected port reset
+WARNING: [Synth 8-3331] design Green_cube has unconnected port left_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port right_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port up_btn
+WARNING: [Synth 8-3331] design Green_cube has unconnected port down_btn
 WARNING: [Synth 8-3331] design Green_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Green_cube has unconnected port VS
 WARNING: [Synth 8-3331] design Green_cube has unconnected port blank
+WARNING: [Synth 8-3331] design Green_cube has unconnected port clk_25MHz
+WARNING: [Synth 8-3331] design Red_cube has unconnected port left_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port right_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port up_btn
+WARNING: [Synth 8-3331] design Red_cube has unconnected port down_btn
 WARNING: [Synth 8-3331] design Red_cube has unconnected port reset
 WARNING: [Synth 8-3331] design Red_cube has unconnected port VS
 WARNING: [Synth 8-3331] design Red_cube has unconnected port blank
+WARNING: [Synth 8-3331] design Red_cube has unconnected port clk_25MHz
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GL/\state_reg[2] )
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[10]) is unused and will be removed from module Blue_cube.
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[9]) is unused and will be removed from module Blue_cube.
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[8]) is unused and will be removed from module Blue_cube.
@@ -397,97 +402,9 @@ WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[2]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[1]) is unused and will be removed from module Blue_cube.
 WARNING: [Synth 8-3332] Sequential element (Object_X_pos_reg[0]) is unused and will be removed from module Blue_cube.
 WARNING: [Synth 8-3332] Sequential element (flag_reg) is unused and will be removed from module Blue_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[3]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[2]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[1]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[0]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[0]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[1]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[2]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[3]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[4]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[5]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[6]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[7]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[8]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[9]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[10]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[11]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[12]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[13]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[14]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[15]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[16]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[17]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[18]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/clk_25k_reg) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[9]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[8]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[7]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[6]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[5]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[4]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[3]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[2]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[1]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[0]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[3]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[2]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[1]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[0]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[8]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[7]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[6]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[5]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[4]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[3]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[2]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[1]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_Y_reg[0]) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (btnRp_reg) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (btnLp_reg) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (btnUp_reg) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (btnDp_reg) is unused and will be removed from module Red_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[4]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[3]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[2]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[1]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posX_reg[0]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[0]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[1]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[2]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[3]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[4]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[5]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[6]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[7]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[8]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[9]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[10]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[11]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[12]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[13]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[14]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[15]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[16]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[17]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/cnt_reg[18]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/clk_25k_reg) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[9]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[8]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[7]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[6]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[5]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[4]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[3]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[2]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[1]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (animation/now_px_X_reg[0]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[3]) is unused and will be removed from module Green_cube.
-WARNING: [Synth 8-3332] Sequential element (posY_reg[2]) is unused and will be removed from module Green_cube.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module game_logic.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,10 +421,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'c1/clk_out1' to pin 'c1/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -518,8 +435,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (GL/minotaur_used_turns_reg[1]) is unused and will be removed from module vgademo4_all_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -542,16 +460,8 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \r11/animation/W1  has unconnected pin addra[3]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \r11/animation/W1  has unconnected pin addra[2]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \r11/animation/W1  has unconnected pin addra[1]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \r11/animation/W1  has unconnected pin addra[0]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \g11/animation/W1  has unconnected pin addra[3]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \g11/animation/W1  has unconnected pin addra[2]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \g11/animation/W1  has unconnected pin addra[1]
-CRITICAL WARNING: [Synth 8-4442] BlackBox module \g11/animation/W1  has unconnected pin addra[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -564,7 +474,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -576,25 +486,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -619,47 +529,45 @@ Report Cell Usage:
 |4     |map_walls_bbox_1 |     1|
 |5     |map_walls_bbox_2 |     1|
 |6     |rom_chars_bbox   |     1|
-|7     |CARRY4           |    39|
-|8     |LUT1             |    93|
-|9     |LUT2             |    53|
-|10    |LUT3             |    70|
-|11    |LUT4             |    51|
-|12    |LUT5             |    51|
-|13    |LUT6             |   135|
-|14    |MUXF7            |     3|
+|7     |CARRY4           |    85|
+|8     |LUT1             |   159|
+|9     |LUT2             |   104|
+|10    |LUT3             |    82|
+|11    |LUT4             |    76|
+|12    |LUT5             |    95|
+|13    |LUT6             |   231|
+|14    |MUXF7            |     7|
 |15    |MUXF8            |     1|
 |16    |FDCE             |    12|
-|17    |FDRE             |    88|
+|17    |FDRE             |   168|
 |18    |IBUF             |     5|
 |19    |OBUF             |    15|
 +------+-----------------+------+
 
 Report Instance Areas: 
-+------+--------------+--------------------------------+------+
-|      |Instance      |Module                          |Cells |
-+------+--------------+--------------------------------+------+
-|1     |top           |                                |   670|
-|2     |  GL          |game_logic                      |   177|
-|3     |  bD          |debounce                        |     9|
-|4     |  bL          |debounce_0                      |     8|
-|5     |  bR          |debounce_1                      |     8|
-|6     |  bU          |debounce_2                      |     8|
-|7     |  clk25k      |clk_divider_25kHz               |   127|
-|8     |  g11         |Green_cube                      |     9|
-|9     |    animation |character_slide__parameterized1 |     9|
-|10    |  r11         |Red_cube                        |     9|
-|11    |    animation |character_slide                 |     9|
-|12    |  t1          |title_block                     |    34|
-|13    |  v1          |vga_controller_640_60           |   257|
-+------+--------------+--------------------------------+------+
++------+------------------+--------------------------------+------+
+|      |Instance          |Module                          |Cells |
++------+------------------+--------------------------------+------+
+|1     |top               |                                |  1094|
+|2     |  GL              |game_logic                      |   648|
+|3     |    MinotaurSlide |character_slide__parameterized1 |   265|
+|4     |    TheseusSlide  |character_slide                 |   251|
+|5     |  bD              |debounce                        |     7|
+|6     |  bL              |debounce_0                      |     8|
+|7     |  bR              |debounce_1                      |     7|
+|8     |  bU              |debounce_2                      |     8|
+|9     |  clk25k          |clk_divider_25kHz               |   127|
+|10    |  t1              |title_block                     |    33|
+|11    |  v1              |vga_controller_640_60           |   234|
++------+------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 627.965 ; gain = 418.773
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 8 critical warnings and 122 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 627.965 ; gain = 111.297
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 627.965 ; gain = 418.773
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 626.426 ; gain = 110.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 626.426 ; gain = 416.355
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
@@ -668,9 +576,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-95 Infos, 141 Warnings, 8 Critical Warnings and 0 Errors encountered.
+95 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 627.965 ; gain = 418.773
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 626.426 ; gain = 416.355
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/synth_1/vgademo4_all_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 627.965 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 17 00:07:32 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 626.426 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 18 17:27:39 2017...

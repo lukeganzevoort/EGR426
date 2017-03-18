@@ -62,15 +62,15 @@ architecture Behavioral of Green_cube is
     );
   end component;
 
-  component character_slide is
-    generic(startX, startY : integer);
-    Port(clk_25MHz : in std_logic;
-      next_positionX : in integer range 1 to 16;
-      next_positionY : in integer range 1 to 12;
-      character_centerX : out STD_LOGIC_VECTOR(10 downto 0);
-      Character_centerY : out STD_LOGIC_VECTOR(10 downto 0);
-      ready : out std_logic);
-  end component;
+  -- component character_slide is
+  --   generic(startX, startY : integer);
+  --   Port(clk_25MHz : in std_logic;
+  --     next_positionX : in integer range 1 to 16;
+  --     next_positionY : in integer range 1 to 12;
+  --     character_centerX : out STD_LOGIC_VECTOR(10 downto 0);
+  --     Character_centerY : out STD_LOGIC_VECTOR(10 downto 0);
+  --     ready : out std_logic);
+  -- end component;
 
   constant startX : integer := 2;
   constant startY : integer := 2;
@@ -89,12 +89,12 @@ architecture Behavioral of Green_cube is
 
 begin
 
-  animation: character_slide
-    generic map(startX,startY)
-    port map(clk_25MHz => clk_25MHz,
-      next_positionX => posX, next_positionY => posY,
-      character_centerX => center_px_X, Character_centerY => center_px_Y,
-      ready => ready);
+  -- animation: character_slide
+  --   generic map(startX,startY)
+  --   port map(clk_25MHz => clk_25MHz,
+  --     next_positionX => posX, next_positionY => posY,
+  --     character_centerX => center_px_X, Character_centerY => center_px_Y,
+  --     ready => ready);
 
 
   -- ROM_Theseus : theseus_rom

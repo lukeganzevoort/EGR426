@@ -35,18 +35,19 @@ library IEEE;
 entity character_slide is
   generic(startX, startY : integer);
   Port(clk_25MHz : in std_logic;
+    reset : in std_logic;
     next_positionX : in integer range 1 to 16;
     next_positionY : in integer range 1 to 12;
-    Character_centerX : out STD_LOGIC_VECTOR(10 downto 0);
-    Character_centerY : out STD_LOGIC_VECTOR(10 downto 0);
-    ready : out std_logic);
+    Character_centerX : out integer range 0 to 640;
+    Character_centerY : out integer range 0 to 480;
+    sliding : out std_logic);
 end character_slide;
 
 architecture Behavioral of character_slide is
 
   signal now_px_X, next_px_X : integer range 0 to 640 := (startX*40+140);
   signal now_px_Y, next_px_Y : integer range 0 to 480 := (startY*40+60);
-  signal clk_25k : std_logic := '0';
+  signal clk_80Hz : std_logic := '0';
   signal complete : std_logic := '0';
   signal ROM_ADDRESS : STD_LOGIC_VECTOR(3 downto 0);
   signal ROM_DATA : STD_LOGIC_VECTOR(8 downto 0);
@@ -60,43 +61,35 @@ architecture Behavioral of character_slide is
 
 begin
 
-  W1 : map_walls port map(
-    clka => clk_25MHz,
-    addra => ROM_ADDRESS,
-    douta => ROM_DATA);
-
   next_px_X <= (next_positionX*40+140);
   next_px_Y <= (next_positionY*40+60);
-  Character_centerX <= conv_std_logic_vector(now_px_X,11);
-  Character_centerY <= conv_std_logic_vector(now_px_Y,11);
-  ready <= complete;
+  Character_centerX <= (now_px_X);
+  Character_centerY <= (now_px_Y);
+  sliding <= not complete;
 
-
-
-  -- Check for walls
-  -- process(next_px_X,next_px_Y,now_px_X,now_px_Y)
+  -- process(clk_25MHz,reset)
   -- begin
-  --   if()
-  --     ROM_ADDRESS <= (now_px_Y-140)/40;
+  --   if(reset = '1')then
+  --     signal now_px_X, next_px_X : integer range 0 to 640 := (startX*40+140);
+  --     signal now_px_Y, next_px_Y : integer range 0 to 480 := (startY*40+60);
 
-
-  -- Clock divider to reach 25kHz
+  -- Clock divider to reach 80Hz
   process(clk_25MHz)
     variable cnt : integer range 0 to 312500 := 0;
   begin
     if (rising_edge(clk_25MHz)) then
       cnt := cnt + 1;
-      if (cnt = 625000/2) then
-        clk_25k <= not clk_25k;
+      if (cnt = 312500/2) then
+        clk_80Hz <= not clk_80Hz;
         cnt := 0;
       end if;
     end if;
   end process;
 
   -- Slide in the X direction
-  process(clk_25k)
+  process(clk_80Hz)
   begin
-    if (rising_edge(clk_25k)) then
+    if (rising_edge(clk_80Hz)) then
       if(now_px_X < next_px_X) then
         now_px_X <= now_px_X + 1;
       elsif(now_px_X > next_px_X) then
@@ -106,9 +99,9 @@ begin
   end process;
 
   -- Slide in the Y direction
-  process(clk_25k)
+  process(clk_80Hz)
   begin
-    if (rising_edge(clk_25k)) then
+    if (rising_edge(clk_80Hz)) then
       if(now_px_Y < next_px_Y) then
         now_px_Y <= now_px_Y + 1;
       elsif(now_px_Y > next_px_Y) then

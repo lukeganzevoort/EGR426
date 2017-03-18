@@ -24,8 +24,8 @@ add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_
 set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp]
 add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp
 set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/rom_chars/rom_chars.dcp]
-add_files -quiet C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.dcp
-set_property used_in_implementation false [get_files C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.dcp]
+add_files -quiet c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.dcp
+set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.dcp]
 read_vhdl -library xil_defaultlib {
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd
