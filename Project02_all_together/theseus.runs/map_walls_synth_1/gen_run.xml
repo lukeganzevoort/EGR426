@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="map_walls_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1489723466">
+  <File Type="PA-TCL" Name="map_walls.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="map_walls_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="map_walls.vds"/>
+  <File Type="RDS-UTIL" Name="map_walls_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="map_walls_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="map_walls.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="map_walls_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="map_walls_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/map_walls">
+    <File Path="$PSRCDIR/sources_1/ip/map_walls/map_walls.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci"/>
+        <Attr Name="ImportTime" Val="1489980280"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/map_walls.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vgademo4_all.srcs/sources_1/ip/map_walls.xcix"/>
+        <Attr Name="ImportTime" Val="1489980279"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="map_walls"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/map_walls">
+    <File Path="$PSRCDIR/sources_1/ip/map_walls/map_walls.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vgademo4_all.srcs/sources_1/ip/map_walls/map_walls.xci"/>
+        <Attr Name="ImportTime" Val="1489980280"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/map_walls.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/vgademo4_all.srcs/sources_1/ip/map_walls.xcix"/>
+        <Attr Name="ImportTime" Val="1489980279"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="map_walls"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

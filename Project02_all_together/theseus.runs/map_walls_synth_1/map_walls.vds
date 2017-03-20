@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Mar 17 00:04:27 2017
+# Process ID: 2556
+# Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1
+# Command line: vivado.exe -log map_walls.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source map_walls.tcl
+# Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1/map_walls.vds
+# Journal file: C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/map_walls_synth_1\vivado.jou
+#-----------------------------------------------------------
+source map_walls.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 307.039 ; gain = 97.223
+INFO: [Synth 8-638] synthesizing module 'map_walls' [c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/synth/map_walls.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'map_walls' (9#1) [c:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/ip/map_walls/synth/map_walls.vhd:67]
+Finished RTL Elaboration : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 490.828 ; gain = 281.012
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:16 . Memory (MB): peak = 490.828 ; gain = 281.012
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.288 . Memory (MB): peak = 545.590 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 545.590 ; gain = 335.773
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 545.590 ; gain = 335.773
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 545.590 ; gain = 335.773
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 545.590 ; gain = 335.773
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 545.590 ; gain = 335.773
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 568.316 ; gain = 358.500
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 568.316 ; gain = 358.500
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB18E1 |     1|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 577.969 ; gain = 368.152
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 607.313 ; gain = 392.320

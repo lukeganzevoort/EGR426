@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1489978444">
-  <File Type="RDS-PROPCONSTRS" Name="vgademo4_all_top_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="vgademo4_all_top.tcl"/>
-  <File Type="RDS-RDS" Name="vgademo4_all_top.vds"/>
-  <File Type="RDS-UTIL" Name="vgademo4_all_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="vgademo4_all_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="vgademo4_all_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="vgademo4_all_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="vgademo4_all_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1489979866">
+  <File Type="RDS-PROPCONSTRS" Name="theseus_top_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="theseus_top.tcl"/>
+  <File Type="RDS-RDS" Name="theseus_top.vds"/>
+  <File Type="RDS-UTIL" Name="theseus_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="theseus_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="theseus_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="theseus_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="theseus_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/MY_CHAR_DRIVER.vhd">
@@ -26,34 +26,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/static_background.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/static_background.vhd"/>
-        <Attr Name="ImportTime" Val="1489975432"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/Draw_minotaur.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Draw_minotaur.vhd"/>
-        <Attr Name="ImportTime" Val="1489975444"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/vga_controller_640_60.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/vga_controller_640_60.vhd"/>
         <Attr Name="ImportTime" Val="1489975411"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/Draw_theseus.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Draw_theseus.vhd"/>
-        <Attr Name="ImportTime" Val="1489975455"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -66,10 +42,42 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/static_background.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/static_background.vhd"/>
+        <Attr Name="ImportTime" Val="1489975432"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/merge_display.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/merge_display.vhd"/>
         <Attr Name="ImportTime" Val="1489975497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Draw_theseus.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Draw_theseus.vhd"/>
+        <Attr Name="ImportTime" Val="1489975455"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Draw_minotaur.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/Draw_minotaur.vhd"/>
+        <Attr Name="ImportTime" Val="1489975444"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debounce.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1489975564"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -90,18 +98,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/debounce.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/new/theseus_top.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/debounce.vhd"/>
-        <Attr Name="ImportTime" Val="1489975564"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/vgademo4_all_top.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/vgademo4_all_top.vhd"/>
-        <Attr Name="ImportTime" Val="1489974733"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/new/theseus_top.vhd"/>
+        <Attr Name="ImportTime" Val="1489979821"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -120,7 +120,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="vgademo4_all_top"/>
+      <Option Name="TopModule" Val="theseus_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
