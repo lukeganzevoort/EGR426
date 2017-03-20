@@ -1,35 +1,15 @@
-----------------------------------------------------------------------------------
--- Company:
--- Engineer:
+--------------------------------------------------------------------------------
+-- Company: GVSU EGR 426
+-- Engineer: Luke Ganzevoort
+-- Create Date: 02/12/2017
 --
--- Create Date: 02/02/2017 07:14:59 PM
--- Design Name:
--- Module Name: MY_CHAR_DRIVER - Behavioral
--- Project Name:
--- Target Devices:
--- Tool Versions:
--- Description:
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
+-- Module: MY_CHAR_DRIVER.vhd
+-- Description: This file chooses which character to display on the screen
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;       -- For unsigned()
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
--- use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity MY_CHAR_DRIVER is
 PORT( hcount,vcount : in STD_LOGIC_VECTOR(10 downto 0);
@@ -44,8 +24,7 @@ architecture Behavioral of MY_CHAR_DRIVER is
   constant vbot : integer := 48;
 
 begin
-  -- char_col <= hcount(9 downto 3);  -- Character column in [0,79]
-  -- char_row <= vcount(8 downto 3);  -- Character row in [0,59]
+
   process(vcount,hcount)
   begin
       if(vcount >= vtop and vcount < vbot

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Sun Mar 19 21:28:27 2017
+| Date             : Sun Mar 19 22:56:11 2017
 | Host             : Luke-laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file vgademo4_all_top_power_routed.rpt -pb vgademo4_all_top_power_summary_routed.pb -rpx vgademo4_all_top_power_routed.rpx
 | Design           : vgademo4_all_top
@@ -50,12 +50,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1023 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      545 |     20800 |            2.62 |
+| Slice Logic    |    <0.001 |     1017 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      539 |     20800 |            2.59 |
 |   CARRY4       |    <0.001 |       85 |      8150 |            1.04 |
-|   Register     |    <0.001 |      204 |     41600 |            0.49 |
-|   F7/F8 Muxes  |    <0.001 |        9 |     32600 |            0.03 |
-|   Others       |     0.000 |       39 |       --- |             --- |
+|   Register     |    <0.001 |      201 |     41600 |            0.48 |
+|   F7/F8 Muxes  |    <0.001 |        7 |     32600 |            0.02 |
+|   Others       |     0.000 |       37 |       --- |             --- |
 | Signals        |    <0.001 |      785 |       --- |             --- |
 | Block RAM      |     0.002 |      2.5 |        50 |            5.00 |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
@@ -124,13 +124,13 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------+----------------------------+-----------------+
-| Clock              | Domain                     | Constraint (ns) |
-+--------------------+----------------------------+-----------------+
-| c1/inst/clk_in1    | clk_100MHz_IBUF_BUFG       |            10.0 |
-| clk_out1_clk_wiz_0 | c1/inst/clk_out1_clk_wiz_0 |            40.0 |
-| clkfbout_clk_wiz_0 | c1/inst/clkfbout_clk_wiz_0 |            10.0 |
-+--------------------+----------------------------+-----------------+
++---------------------+--------------------------------+-----------------+
+| Clock               | Domain                         | Constraint (ns) |
++---------------------+--------------------------------+-----------------+
+| Clk25M/inst/clk_in1 | clk_100MHz_IBUF_BUFG           |            10.0 |
+| clk_out1_clk_wiz_0  | Clk25M/inst/clk_out1_clk_wiz_0 |            40.0 |
+| clkfbout_clk_wiz_0  | Clk25M/inst/clkfbout_clk_wiz_0 |            10.0 |
++---------------------+--------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -143,7 +143,9 @@ Table of Contents
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
 | vgademo4_all_top                               |     0.121 |
-|   GL                                           |     0.003 |
+|   Clk25M                                       |     0.116 |
+|     inst                                       |     0.116 |
+|   GameLogic                                    |     0.003 |
 |     MinotaurSlide                              |    <0.001 |
 |     MinotaurWallsX                             |    <0.001 |
 |       U0                                       |    <0.001 |
@@ -174,17 +176,9 @@ Table of Contents
 |             valid.cstr                         |    <0.001 |
 |               ramloop[0].ram.r                 |    <0.001 |
 |                 prim_init.ram                  |    <0.001 |
-|   bC                                           |    <0.001 |
-|   bD                                           |    <0.001 |
-|   bL                                           |    <0.001 |
-|   bR                                           |    <0.001 |
-|   bU                                           |    <0.001 |
-|   c1                                           |     0.116 |
-|     inst                                       |     0.116 |
-|   clk25k                                       |    <0.001 |
-|   g11                                          |    <0.001 |
-|   r11                                          |    <0.001 |
-|   t1                                           |    <0.001 |
+|   Minotuar                                     |    <0.001 |
+|   Theseus                                      |    <0.001 |
+|   Title                                        |    <0.001 |
 |     my_rom                                     |    <0.001 |
 |       U0                                       |    <0.001 |
 |         inst_blk_mem_gen                       |    <0.001 |
@@ -192,7 +186,13 @@ Table of Contents
 |             valid.cstr                         |    <0.001 |
 |               ramloop[0].ram.r                 |    <0.001 |
 |                 prim_init.ram                  |    <0.001 |
-|   v1                                           |    <0.001 |
+|   VGACtrl                                      |    <0.001 |
+|   btnCenterDebounce                            |    <0.001 |
+|   btnDownDebounce                              |    <0.001 |
+|   btnLeftDebounce                              |    <0.001 |
+|   btnRightDebounce                             |    <0.001 |
+|   btnUpDebounce                                |    <0.001 |
+|   clk25k                                       |    <0.001 |
 +------------------------------------------------+-----------+
 
 

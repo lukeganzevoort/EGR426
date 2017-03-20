@@ -1,24 +1,11 @@
-----------------------------------------------------------------------------------
--- Company:
--- Engineer:
+--------------------------------------------------------------------------------
+-- Company: GVSU EGR 426
+-- Engineer: Luke Ganzevoort
+-- Create Date: 02/12/2017
 --
--- Create Date: 02/23/2017 04:40:43 PM
--- Design Name:
--- Module Name: debounce - Behavioral
--- Project Name:
--- Target Devices:
--- Tool Versions:
--- Description:
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
-
-
+-- Module: debounce.vhd
+-- Description: This file takes a button and debounces it
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -34,7 +21,7 @@ architecture Behavioral of debounce is
 
 begin
 
-  reset_process : process(clk)
+  reset_process : process(clk,rst)
   begin
     if(rst = '1') then
       current_state <= reset;
