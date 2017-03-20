@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity debounce is
-  port( clk,rst,x : std_logic;
+  port( clk,rst,x : in std_logic;
     pb_out : out std_logic);
 end debounce;
 

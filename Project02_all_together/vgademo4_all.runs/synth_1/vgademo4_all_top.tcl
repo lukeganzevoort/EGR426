@@ -29,15 +29,14 @@ set_property used_in_implementation false [get_files c:/Users/Luke/Documents/EGR
 read_vhdl -library xil_defaultlib {
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/character_slide.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd
+  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd
+  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/game_logic.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vga_controller_640_60.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/static_background.vhd
-  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Red_cube.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/merge_display.vhd
-  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Green_cube.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/imports/new/debounce.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/clk_div_25k.vhd
-  C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/Blue_cube.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/title_block.vhd
   C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.srcs/sources_1/new/vgademo4_all_top.vhd
 }

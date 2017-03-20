@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Sat Mar 18 17:28:25 2017
+| Date         : Sun Mar 19 21:27:49 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vgademo4_all_top_control_sets_placed.rpt
 | Design       : vgademo4_all_top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    16 |
-| Unused register locations in slices containing registers |    79 |
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    84 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              49 |           22 |
-| No           | No                    | Yes                    |              12 |            4 |
-| No           | Yes                   | No                     |              83 |           25 |
-| Yes          | No                    | No                     |              46 |           16 |
-| Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              11 |            4 |
+| No           | No                    | No                     |              47 |           20 |
+| No           | No                    | Yes                    |              19 |            7 |
+| No           | Yes                   | No                     |              81 |           24 |
+| Yes          | No                    | No                     |               8 |            4 |
+| Yes          | No                    | Yes                    |              38 |           12 |
+| Yes          | Yes                   | No                     |              11 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -51,19 +51,20 @@ Table of Contents
 |  c1/inst/clk_out1                  |                                         | v1/HS0                             |                1 |              1 |
 |  c1/inst/clk_out1                  |                                         | v1/VS0                             |                1 |              1 |
 |  clk_100MHz_IBUF_BUFG              |                                         |                                    |                1 |              1 |
-|  c1/inst/clk_out1                  | GL/MinotaurSlide/mi_map_x_reg[3][0]     |                                    |                1 |              4 |
-|  c1/inst/clk_out1                  | GL/MinotaurSlide/E[0]                   |                                    |                1 |              4 |
-|  GL/TheseusSlide/clk               | GL/TheseusSlide/now_px_Y[8]_i_1_n_0     |                                    |                3 |              9 |
-|  GL/MinotaurSlide/clk_80Hz_reg_n_0 | GL/MinotaurSlide/now_px_Y[8]_i_1__0_n_0 |                                    |                3 |              9 |
-|  GL/TheseusSlide/clk               | GL/TheseusSlide/now_px_X[9]_i_1_n_0     |                                    |                4 |             10 |
-|  GL/MinotaurSlide/clk_80Hz_reg_n_0 | GL/MinotaurSlide/now_px_X[9]_i_1__0_n_0 |                                    |                4 |             10 |
-|  c1/inst/clk_out1                  |                                         | v1/hcounter[10]_i_1_n_0            |                5 |             11 |
-|  c1/inst/clk_out1                  | v1/eqOp                                 | v1/vcounter[10]_i_1_n_0            |                4 |             11 |
-|  clk25k/CLK                        |                                         | reset_IBUF                         |                4 |             12 |
-|  c1/inst/clk_out1                  |                                         | GL/TheseusSlide/clear              |                5 |             19 |
-|  c1/inst/clk_out1                  |                                         | GL/MinotaurSlide/cnt[0]_i_1__0_n_0 |                5 |             19 |
+|  c1/inst/clk_out1                  |                                         | reset_IBUF                         |                2 |              4 |
+|  c1/inst/clk_out1                  | GL/MinotaurSlide/E[0]                   |                                    |                2 |              4 |
+|  c1/inst/clk_out1                  | GL/MinotaurSlide/th_map_y_reg[0][0]     |                                    |                2 |              4 |
+|  GL/TheseusSlide/clk               | GL/TheseusSlide/now_px_Y[8]_i_1_n_0     | reset_IBUF                         |                3 |              9 |
+|  GL/MinotaurSlide/clk_80Hz_reg_n_0 | GL/MinotaurSlide/now_px_Y[8]_i_1__0_n_0 | reset_IBUF                         |                3 |              9 |
+|  GL/TheseusSlide/clk               | GL/TheseusSlide/now_px_X[9]_i_1_n_0     | reset_IBUF                         |                3 |             10 |
+|  GL/MinotaurSlide/clk_80Hz_reg_n_0 | GL/MinotaurSlide/now_px_X[9]_i_1__0_n_0 | reset_IBUF                         |                3 |             10 |
+|  c1/inst/clk_out1                  |                                         | v1/hcounter[10]_i_1_n_0            |                4 |             11 |
+|  c1/inst/clk_out1                  | v1/eqOp                                 | v1/vcounter[10]_i_1_n_0            |                5 |             11 |
+|  clk25k/CLK                        |                                         | reset_IBUF                         |                5 |             15 |
+|  c1/inst/clk_out1                  |                                         | GL/TheseusSlide/clear              |                5 |             18 |
+|  c1/inst/clk_out1                  |                                         | GL/MinotaurSlide/cnt[0]_i_1__0_n_0 |                5 |             18 |
 |  clk_100MHz_IBUF_BUFG              |                                         | clk25k/clear                       |                8 |             32 |
-|  c1/inst/clk_out1                  |                                         |                                    |               21 |             48 |
+|  c1/inst/clk_out1                  |                                         |                                    |               19 |             46 |
 +------------------------------------+-----------------------------------------+------------------------------------+------------------+----------------+
 
 
@@ -71,11 +72,11 @@ Table of Contents
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 1      |                     3 |
-| 4      |                     2 |
+| 4      |                     3 |
 | 9      |                     2 |
 | 10     |                     2 |
 | 11     |                     2 |
-| 12     |                     1 |
+| 15     |                     1 |
 | 16+    |                     4 |
 +--------+-----------------------+
 

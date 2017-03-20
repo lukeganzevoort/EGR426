@@ -36,8 +36,8 @@ entity character_slide is
   generic(startX, startY : integer);
   Port(clk_25MHz : in std_logic;
     reset : in std_logic;
-    next_positionX : in integer range 1 to 16;
-    next_positionY : in integer range 1 to 12;
+    next_positionX : in integer range 0 to 8;
+    next_positionY : in integer range 0 to 8;
     Character_centerX : out integer range 0 to 640;
     Character_centerY : out integer range 0 to 480;
     sliding : out std_logic);
@@ -67,19 +67,13 @@ begin
   Character_centerY <= (now_px_Y);
   sliding <= not complete;
 
-  -- process(clk_25MHz,reset)
-  -- begin
-  --   if(reset = '1')then
-  --     signal now_px_X, next_px_X : integer range 0 to 640 := (startX*40+140);
-  --     signal now_px_Y, next_px_Y : integer range 0 to 480 := (startY*40+60);
-
   -- Clock divider to reach 80Hz
   process(clk_25MHz)
-    variable cnt : integer range 0 to 312500 := 0;
+    variable cnt : integer range 0 to 160750 := 0;
   begin
     if (rising_edge(clk_25MHz)) then
       cnt := cnt + 1;
-      if (cnt = 312500/2) then
+      if (cnt = 160750/2) then
         clk_80Hz <= not clk_80Hz;
         cnt := 0;
       end if;
@@ -89,7 +83,9 @@ begin
   -- Slide in the X direction
   process(clk_80Hz)
   begin
-    if (rising_edge(clk_80Hz)) then
+    if(reset = '1')then
+      now_px_X <= (startX*40+140);
+    elsif (rising_edge(clk_80Hz)) then
       if(now_px_X < next_px_X) then
         now_px_X <= now_px_X + 1;
       elsif(now_px_X > next_px_X) then
@@ -101,7 +97,9 @@ begin
   -- Slide in the Y direction
   process(clk_80Hz)
   begin
-    if (rising_edge(clk_80Hz)) then
+    if(reset = '1')then
+      now_px_Y <= (startY*40+60);
+    elsif (rising_edge(clk_80Hz)) then
       if(now_px_Y < next_px_Y) then
         now_px_Y <= now_px_Y + 1;
       elsif(now_px_Y > next_px_Y) then
