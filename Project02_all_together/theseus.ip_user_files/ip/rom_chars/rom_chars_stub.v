@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Sun Mar 12 21:52:28 2017
+// Date        : Tue Mar 21 20:15:54 2017
 // Host        : Luke-laptop running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Luke/Documents/EGR426/Project02_all_together/vgademo4_all.runs/rom_chars_synth_1/rom_chars_stub.v
+//               C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/rom_chars_synth_1/rom_chars_stub.v
 // Design      : rom_chars
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

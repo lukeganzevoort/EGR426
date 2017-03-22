@@ -1,0 +1,20 @@
+EGR 426 - Lecture 18 - project 3
+--------------------------------------
+Quiz Today
+Project #2 (demo-thur)
+Project #3 (on website) due April 24/45
+Lab Exam - April 20 in class (3 to 4 hours)
+-------------------------------------
+Project 3
+
+- RTL modelling
+- Behavior modelling
+- Instantiations
+- FSM
+- Memory
+- Procedure/Function
+- Simulation
+- Hardware implementation
+	
+
+

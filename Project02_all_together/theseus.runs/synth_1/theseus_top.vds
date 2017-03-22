@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sun Mar 19 23:25:59 2017
-# Process ID: 2496
+# Start of session at: Tue Mar 21 20:16:00 2017
+# Process ID: 8888
 # Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1
 # Command line: vivado.exe -log theseus_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source theseus_top.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/theseus_top.vds
@@ -14,21 +14,21 @@ Command: synth_design -top theseus_top -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/map_walls/map_walls.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/map_walls/map_walls.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/rom_chars/rom_chars.dcp]
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7376 
+INFO: Helper process launched with PID 8320 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 283.906 ; gain = 73.770
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 283.699 ; gain = 73.559
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/merge_display.vhd:33]
 INFO: [Synth 8-638] synthesizing module 'theseus_top' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Clk25M' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Clk25M' of component 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/clk_wiz_0_stub.vhdl:15]
 INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/vga_controller_640_60.vhd:75' bound to instance 'VGACtrl' of component 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:101]
 INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/vga_controller_640_60.vhd:88]
 INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (1#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/vga_controller_640_60.vhd:88]
@@ -45,8 +45,8 @@ INFO: [Synth 8-638] synthesizing module 'draw_theseus' [C:/Users/Luke/Documents/
 INFO: [Synth 8-256] done synthesizing module 'draw_theseus' (4#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/Draw_theseus.vhd:22]
 INFO: [Synth 8-3491] module 'title_block' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:13' bound to instance 'Title' of component 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'title_block' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:19]
-INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'rom_chars' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/rom_chars_stub.vhdl:5' bound to instance 'my_rom' of component 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'rom_chars' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/rom_chars_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'MY_CHAR_DRIVER' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:14' bound to instance 'char_driver' of component 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:47]
 INFO: [Synth 8-638] synthesizing module 'MY_CHAR_DRIVER' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:19]
 INFO: [Synth 8-256] done synthesizing module 'MY_CHAR_DRIVER' (5#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/MY_CHAR_DRIVER.vhd:19]
@@ -66,9 +66,9 @@ INFO: [Synth 8-638] synthesizing module 'clk_divider_25kHz' [C:/Users/Luke/Docum
 INFO: [Synth 8-256] done synthesizing module 'clk_divider_25kHz' (9#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/clk_div_25k.vhd:19]
 INFO: [Synth 8-3491] module 'game_logic' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:14' bound to instance 'GameLogic' of component 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:146]
 INFO: [Synth 8-638] synthesizing module 'game_logic' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:22]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/map_walls_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:69]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/map_walls_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'TheseusWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:69]
 	Parameter startX bound to: 2 - type: integer 
 	Parameter startY bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/character_slide.vhd:14' bound to instance 'TheseusSlide' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:73]
@@ -78,8 +78,8 @@ INFO: [Synth 8-638] synthesizing module 'character_slide' [C:/Users/Luke/Documen
 WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/character_slide.vhd:63]
 WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/character_slide.vhd:77]
 INFO: [Synth 8-256] done synthesizing module 'character_slide' (10#1) [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/character_slide.vhd:25]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:82]
-INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:86]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsX' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:82]
+INFO: [Synth 8-3491] module 'map_walls' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/realtime/map_walls_stub.vhdl:5' bound to instance 'MinotaurWallsY' of component 'map_walls' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:86]
 	Parameter startX bound to: 1 - type: integer 
 	Parameter startY bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'character_slide' declared at 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/character_slide.vhd:14' bound to instance 'MinotaurSlide' of component 'character_slide' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:90]
@@ -128,7 +128,7 @@ WARNING: [Synth 8-3331] design title_block has unconnected port reset
 WARNING: [Synth 8-3331] design draw_theseus has unconnected port clk_25MHz
 WARNING: [Synth 8-3331] design draw_minotaur has unconnected port clk_25MHz
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 320.352 ; gain = 110.215
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 320.148 ; gain = 110.008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -138,11 +138,11 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 320.352 ; gain = 110.215
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 320.148 ; gain = 110.008
 ---------------------------------------------------------------------------------
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/map_walls/map_walls.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/map_walls/map_walls.dcp]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'Clk25M' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/theseus_top.vhd:98]
 WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'map_walls' instantiated as 'GameLogic/TheseusWallsX'. 4 instances of this cell are unresolved black boxes. [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/game_logic.vhd:65]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'rom_chars' instantiated as 'Title/my_rom' [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/sources_1/imports/new/title_block.vhd:43]
@@ -151,18 +151,18 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'Clk25M'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'Clk25M'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 'Title/my_rom'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 'Title/my_rom'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsX'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsX'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsY'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsY'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsX'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsX'
-Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsY'
-Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsY'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'Clk25M'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp/clk_wiz_0_in_context.xdc] for cell 'Clk25M'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 'Title/my_rom'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_2/rom_chars_in_context.xdc] for cell 'Title/my_rom'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsX'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsX'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsY'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/TheseusWallsY'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsX'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsX'
+Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsY'
+Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp_3/map_walls_in_context.xdc] for cell 'GameLogic/MinotaurWallsY'
 Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/constrs_1/new/vgatop_pins.xdc]
 Finished Parsing XDC File [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/constrs_1/new/vgatop_pins.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.srcs/constrs_1/new/vgatop_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/theseus_top_propImpl.xdc].
@@ -172,27 +172,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 625.934 ; gain = 0.000
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/rom_chars/rom_chars.dcp]
-WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/map_walls/map_walls.dcp]
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 625.191 ; gain = 0.000
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/rom_chars/rom_chars.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/map_walls/map_walls.dcp]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-2496-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/.Xil/Vivado-8888-Luke-laptop/dcp/clk_wiz_0_in_context.xdc, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "Red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -216,7 +216,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'debounce'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -400,7 +400,7 @@ WARNING: [Synth 8-3331] design title_block has unconnected port reset
 WARNING: [Synth 8-3331] design draw_theseus has unconnected port clk_25MHz
 WARNING: [Synth 8-3331] design draw_minotaur has unconnected port clk_25MHz
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -417,10 +417,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Clk25M/clk_out1' to pin 'Clk25M/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 625.191 ; gain = 415.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -432,7 +432,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:53 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -456,7 +456,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -469,7 +469,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -481,25 +481,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -560,11 +560,11 @@ Report Instance Areas:
 |14    |  clk25k            |clk_divider_25kHz               |   127|
 +------+--------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 625.934 ; gain = 109.605
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 625.934 ; gain = 415.797
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 625.285 ; gain = 109.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 625.285 ; gain = 415.145
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -577,7 +577,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 91 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 625.934 ; gain = 415.797
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 625.285 ; gain = 415.145
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/synth_1/theseus_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 625.934 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 19 23:26:42 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 625.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 21 20:16:59 2017...

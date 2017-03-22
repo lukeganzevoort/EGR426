@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sun Mar 19 23:28:23 2017
-# Process ID: 10940
+# Start of session at: Tue Mar 21 20:17:05 2017
+# Process ID: 9000
 # Current directory: C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/impl_1
 # Command line: vivado.exe -log theseus_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source theseus_top.tcl -notrace
 # Log file: C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/impl_1/theseus_top.vdi

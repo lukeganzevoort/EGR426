@@ -1,1 +1,0 @@
-rom_chars_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../ip/rom_chars/rom_chars_sim_netlist.vhdl,

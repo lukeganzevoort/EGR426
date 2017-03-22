@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="impl_1" LaunchDir="C:/chirag/GVSUcourses/Winter16/EGR426/Projects/Project2_Feb16/vgademo4_all/vgademo4_all.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
-</Runs>
-

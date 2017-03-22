@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-// Date        : Tue Mar 21 20:15:54 2017
+// Date        : Tue Mar 21 20:15:53 2017
 // Host        : Luke-laptop running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/Luke/Documents/EGR426/Project02_all_together/theseus.runs/map_walls_synth_1/map_walls_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ map_walls_sim_netlist.v
 // Design      : map_walls
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@
 
 (* CHECK_LICENSE_TYPE = "map_walls,blk_mem_gen_v8_3_4,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "blk_mem_gen_v8_3_4,Vivado 2016.3" *) 
 (* NotValidForBitStream *)
-module map_walls
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (clka,
     addra,
     douta);
@@ -120,7 +120,7 @@ module map_walls
   (* C_WRITE_WIDTH_B = "9" *) 
   (* C_XDEVICEFAMILY = "artix7" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
-  map_walls_blk_mem_gen_v8_3_4 U0
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_v8_3_4 U0
        (.addra(addra),
         .addrb({1'b0,1'b0,1'b0,1'b0}),
         .clka(clka),
@@ -186,8 +186,7 @@ module map_walls
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
-module map_walls_blk_mem_gen_generic_cstr
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_generic_cstr
    (douta,
     clka,
     addra);
@@ -199,14 +198,13 @@ module map_walls_blk_mem_gen_generic_cstr
   wire clka;
   wire [8:0]douta;
 
-  map_walls_blk_mem_gen_prim_width \ramloop[0].ram.r 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_prim_width \ramloop[0].ram.r 
        (.addra(addra),
         .clka(clka),
         .douta(douta));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
-module map_walls_blk_mem_gen_prim_width
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_prim_width
    (douta,
     clka,
     addra);
@@ -218,14 +216,13 @@ module map_walls_blk_mem_gen_prim_width
   wire clka;
   wire [8:0]douta;
 
-  map_walls_blk_mem_gen_prim_wrapper_init \prim_init.ram 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_prim_wrapper_init \prim_init.ram 
        (.addra(addra),
         .clka(clka),
         .douta(douta));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
-module map_walls_blk_mem_gen_prim_wrapper_init
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
     addra);
@@ -391,8 +388,7 @@ module map_walls_blk_mem_gen_prim_wrapper_init
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
-module map_walls_blk_mem_gen_top
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_top
    (douta,
     clka,
     addra);
@@ -404,7 +400,7 @@ module map_walls_blk_mem_gen_top
   wire clka;
   wire [8:0]douta;
 
-  map_walls_blk_mem_gen_generic_cstr \valid.cstr 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_generic_cstr \valid.cstr 
        (.addra(addra),
         .clka(clka),
         .douta(douta));
@@ -434,8 +430,8 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "16" *) (* C_WRITE_DEPTH_B = "16" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "9" *) (* C_WRITE_WIDTH_B = "9" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_4" *) (* downgradeipidentifiedwarnings = "yes" *) 
-module map_walls_blk_mem_gen_v8_3_4
+(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_v8_3_4
    (clka,
     rsta,
     ena,
@@ -620,14 +616,13 @@ module map_walls_blk_mem_gen_v8_3_4
   assign sbiterr = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  map_walls_blk_mem_gen_v8_3_4_synth inst_blk_mem_gen
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_v8_3_4_synth inst_blk_mem_gen
        (.addra(addra),
         .clka(clka),
         .douta(douta));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_4_synth" *) 
-module map_walls_blk_mem_gen_v8_3_4_synth
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_v8_3_4_synth
    (douta,
     clka,
     addra);
@@ -639,7 +634,7 @@ module map_walls_blk_mem_gen_v8_3_4_synth
   wire clka;
   wire [8:0]douta;
 
-  map_walls_blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
        (.addra(addra),
         .clka(clka),
         .douta(douta));
