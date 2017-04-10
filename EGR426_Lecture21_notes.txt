@@ -1,0 +1,10 @@
+EGR 426 - Lecture 20
+--------------------------------------
+LA #10 today
+Quiz (Thursday)
+Proj #3 - BCD (due Thursday)
+Lab Exam (April 13)
+--------------------------------------
+clr a
+load 19,a
+0x13

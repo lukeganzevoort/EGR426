@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="La12multiplier_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1491515069">
+  <File Type="RDS-PROPCONSTRS" Name="La12multiplier_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="La12multiplier.tcl"/>
+  <File Type="RDS-RDS" Name="La12multiplier.vds"/>
+  <File Type="RDS-UTIL" Name="La12multiplier_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="La12multiplier_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="La12multiplier.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="La12multiplier_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="La12multiplier_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/La12multiplier">
+    <File Path="$PSRCDIR/sources_1/ip/La12multiplier/La12multiplier.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="La12multiplier"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/La12multiplier">
+    <File Path="$PSRCDIR/sources_1/ip/La12multiplier/La12multiplier.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="La12multiplier"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

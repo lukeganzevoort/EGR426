@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1490141625">
-  <File Type="PWROPT-DRC" Name="theseus_top_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="theseus_top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="theseus_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="theseus_top_power_routed.rpx"/>
   <File Type="PA-TCL" Name="theseus_top.tcl"/>
-  <File Type="OPT-HWDEF" Name="theseus_top.hwdef"/>
+  <File Type="INIT-TIMING" Name="theseus_top_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="theseus_top_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="theseus_top_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="theseus_top.vdi"/>
   <File Type="OPT-DCP" Name="theseus_top_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="theseus_top.hwdef"/>
   <File Type="OPT-DRC" Name="theseus_top_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="theseus_top_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="theseus_top_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="theseus_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="theseus_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="theseus_top_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="theseus_top.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="theseus_top_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="theseus_top.drc"/>
+  <File Type="BG-BIN" Name="theseus_top.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="theseus_top_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="theseus_top.msk"/>
+  <File Type="BG-DRC" Name="theseus_top.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="theseus_top_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="theseus_top.bgn"/>
+  <File Type="BITSTR-MSK" Name="theseus_top.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="theseus_top_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="theseus_top.bgn"/>
   <File Type="ROUTE-PWR" Name="theseus_top_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="theseus_top_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="theseus_top_route_status.rpt"/>
@@ -207,6 +207,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="map_walls"/>
   <BlockFileSet Type="BlockSrcs" Name="rom_chars"/>
+  <BlockFileSet Type="BlockSrcs" Name="map_walls"/>
 </GenRun>

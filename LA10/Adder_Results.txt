@@ -1,0 +1,33 @@
+Normal Adder
+	16 bit
+		LUTs 16
+		TD 9.737 ns
+	32 bit
+		LUTs 32
+		TD 15.678 ns
+	48 bit
+		LUTs 48
+		Ran out of pins
+
+Ripple Adder
+	16 bit
+		LUTs 16
+		TD 14.551 ns
+	32 bit
+		LUTs 32
+		TD 27.837
+	48 bit
+		LUTs 48
+		Ran out of pins
+	
+Carry Lookahead Generator
+	16 bit
+		LUTs 15
+		TD 15.080 ns
+	32 bit
+		LUTs 32
+		TD 23.190
+	48 bit
+		LUTs 48
+		Ran out of pins
+

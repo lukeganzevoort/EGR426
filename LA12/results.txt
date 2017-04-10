@@ -1,0 +1,14 @@
+1 - Signed
+62 LUTS
+13.126 ns
+worked
+
+2 - Unsigned
+71 LUTS
+13.594 ns
+worked
+
+3 - IP
+0 LUTs
+5.719 ns
+Worked for signed

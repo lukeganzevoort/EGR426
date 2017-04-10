@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Apr 04 16:35:29 2017
+# Process ID: 1688
+# Current directory: C:/Users/Luke/Documents/EGR426/LA11/LA11.runs/synth_1
+# Command line: vivado.exe -log reg_comparator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source reg_comparator.tcl
+# Log file: C:/Users/Luke/Documents/EGR426/LA11/LA11.runs/synth_1/reg_comparator.vds
+# Journal file: C:/Users/Luke/Documents/EGR426/LA11/LA11.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source reg_comparator.tcl -notrace

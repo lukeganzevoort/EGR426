@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1490141625">
-  <File Type="RDS-PROPCONSTRS" Name="theseus_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="theseus_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="theseus_top_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="theseus_top.vds"/>
   <File Type="RDS-UTIL" Name="theseus_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="theseus_top_utilization_synth.pb"/>
@@ -147,6 +147,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="map_walls"/>
   <BlockFileSet Type="BlockSrcs" Name="rom_chars"/>
+  <BlockFileSet Type="BlockSrcs" Name="map_walls"/>
 </GenRun>

@@ -1,0 +1,1 @@
+La12multiplier.vhd,vhdl,xil_defaultlib,../../../../LA12.srcs/sources_1/ip/La12multiplier/sim/La12multiplier.vhd,

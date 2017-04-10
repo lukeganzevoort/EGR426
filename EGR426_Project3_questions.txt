@@ -1,0 +1,44 @@
+2.6, 2.25, 2.28, 2.29, 2.38
+--------------------------------------------------------------------------------
+2.6 BCD Output
+	This instruction takes the form “BCDO R” where “R” stands for either 
+	register A or B. This instruction takes	the lower 4 bits of the register, 
+	decodes them as a BCD number (from 0 through 9) and sends the 7-segment
+	LED representation of this number to Output Port #0. Similarly, the upper 
+	4 bits of the register are decoded as a	BCD number and sent as a 7-segment 
+	LED representation to Output Port #1. 
+	- Can I use my module/algorithm from first project (double dabble)?
+	- look at out
+
+2.25 Debounce
+	This instruction may either take the form “DEB 0, R” or “DEB 1, R” where 
+	“R” stands for either register A or	B. This instruction returns the 
+	debounced status of Input #0 bit 0 (for DEB 0) or Input #0 bit 1 
+	(for DEB 1). If	this bit has remained at a logic 0 for the last 40ms, 
+	the DEB instruction should set the target register (A or B) to 1, else 
+	the target register should be set to 0. 
+	- look at in
+
+2.28 Increment data
+	This instruction takes the form “INC M” where “M” is a memory address. 
+	All 512 addresses must be allowed. This instruction increments the 8-bit 
+	number at the memory location specified and stores the result back in
+	memory. Condition code bits are updated accordingly. 
+	- Read memory at address, increment, and store back in the same spot.
+	- Condition code bits?
+	- 2 byte (opt code, memory location)
+	- additional register
+
+2.29 Increment Memory and Skip if Zero
+	This instruction takes the form “INCMSZ M” where “M” is a memory location. 
+	This instruction increments the	contents of the memory location. If the 
+	value becomes zero, the next instruction is skipped. 
+	- 
+	
+3.38 Multiply and Accumulate
+	This instruction takes the form “MAC M” where “M” represents a memory 
+	address. This instruction multiplies the current contents of the A and B 
+	registers (interpreted as unsigned numbers), adds the 16-bit result to the 
+	16-bit contents of memory locations M and M+1, then stores the result 
+	back to these memory locations.
+	- Overflow?

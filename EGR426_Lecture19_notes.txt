@@ -1,0 +1,21 @@
+EGR 426 - Lecture 19 RAM
+--------------------------------------
+RAM
+- Write enable
+	- Must be stable for a setup time and hold time.
+- Types:
+	- Single Port Lookup Table RAM
+		- Addra, DatainA, WEA, Dataout
+		- Dataout is read asynchronously
+	- Dual Port LUT RAM
+	- SimpleDual port block RAM
+		- Port A to write
+		- Port B to read
+	- True Dual port Block RAM
+		- Port A to write/read
+		- Port B to write/read
+		- Can read first or write first when reading and writing at the same time
+
+Stack
+
+

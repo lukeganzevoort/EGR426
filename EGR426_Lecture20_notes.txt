@@ -1,0 +1,15 @@
+EGR 426 - Lecture 20
+--------------------------------------
+LA #10 today
+Quiz (Thursday)
+Proj #3 - BCD (due Thursday)
+Lab Exam (April 13)
+--------------------------------------
+Adders
+- RCA (Ripple carry adder)
+	- Slow
+	- Little logic
+- LUT
+	- Fast
+	- Huge resources used
+_
