@@ -47,14 +47,19 @@ component cpu
 PORT(clk, clk100MHz : in STD_LOGIC;
    reset : in STD_LOGIC;
    Inport0, Inport1 : in STD_LOGIC_VECTOR(7 downto 0);
-   ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0);
-   sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111";
-   PCt : out UNSIGNED(8 downto 0);
-   IRt : out STD_LOGIC_VECTOR(7 downto 0);
-   MDRt : out STD_LOGIC_VECTOR(7 downto 0);
-   At,Bt : out SIGNED(7 downto 0);
-   Nt,Zt,Vt : out STD_LOGIC;
-   DATAt : out STD_LOGIC_VECTOR(7 downto 0));
+   ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
+   sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := (others => '1'));
+-- PORT(clk, clk100MHz : in STD_LOGIC;
+--    reset : in STD_LOGIC;
+--    Inport0, Inport1 : in STD_LOGIC_VECTOR(7 downto 0);
+--    ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0);
+--    sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111";
+--    PCt : out UNSIGNED(8 downto 0);
+--    IRt : out STD_LOGIC_VECTOR(7 downto 0);
+--    MDRt : out STD_LOGIC_VECTOR(7 downto 0);
+--    At,Bt : out SIGNED(7 downto 0);
+--    Nt,Zt,Vt : out STD_LOGIC;
+--    DATAt : out STD_LOGIC_VECTOR(7 downto 0));
 end component;
 
 --Inputs
@@ -70,19 +75,19 @@ signal sevport0, sevport1, sevport2, sevport3 : std_logic_vector(6 downto 0);
 
 
 -- ---------- Declare the internal CPU registers -------------------
-signal PC : UNSIGNED(8 downto 0);
-signal IR : STD_LOGIC_VECTOR(7 downto 0);
-signal MDR : STD_LOGIC_VECTOR(7 downto 0);
-
-signal A,B : SIGNED(7 downto 0);
-signal N,Z,V : STD_LOGIC;
--- ---------- Declare the common data bus ------------------
-signal DATA : STD_LOGIC_VECTOR(7 downto 0);
+-- signal PC : UNSIGNED(8 downto 0);
+-- signal IR : STD_LOGIC_VECTOR(7 downto 0);
+-- signal MDR : STD_LOGIC_VECTOR(7 downto 0);
+--
+-- signal A,B : SIGNED(7 downto 0);
+-- signal N,Z,V : STD_LOGIC;
+-- -- ---------- Declare the common data bus ------------------
+-- signal DATA : STD_LOGIC_VECTOR(7 downto 0);
 
 
 
 -- Clock period definitions
-constant clk_period : time := 100ns;
+constant clk_period : time := 10ns;
 
 begin
 -- Instantiate the Unit Under Test (UUT)
@@ -97,16 +102,28 @@ C1 : cpu port map (
     sevport0 => sevport0,
     sevport1 => sevport1,
     sevport2 => sevport2,
-    sevport3 => sevport3,
-    PCt => PC,
-    IRt => IR,
-    MDRt => MDR,
-    At => A,
-    Bt => B,
-    Nt => N,
-    Zt => Z,
-    Vt => V,
-    DATAt => DATA);
+    sevport3 => sevport3);
+-- C1 : cpu port map (
+--     clk => clk,
+--     clk100MHz => clk100MHz,
+--     reset => reset,
+--     Inport0 => Inport0,
+--     Inport1 => Inport1,
+--     ledport0 => Outport0,
+--     ledport1 => Outport1,
+--     sevport0 => sevport0,
+--     sevport1 => sevport1,
+--     sevport2 => sevport2,
+--     sevport3 => sevport3,
+--     PCt => PC,
+--     IRt => IR,
+--     MDRt => MDR,
+--     At => A,
+--     Bt => B,
+--     Nt => N,
+--     Zt => Z,
+--     Vt => V,
+--     DATAt => DATA);
 
 -- Clock process
 clk_process : process begin

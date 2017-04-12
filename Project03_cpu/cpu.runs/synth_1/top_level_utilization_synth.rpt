@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Sun Apr 09 23:10:55 2017
+| Date         : Tue Apr 11 16:28:38 2017
 | Host         : Luke-laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -154,7 +154,7 @@ Table of Contents
 | FDCE     |  128 |        Flop & Latch |
 | LUT4     |  115 |                 LUT |
 | LUT6     |   75 |                 LUT |
-| LUT3     |   75 |                 LUT |
+| LUT3     |   74 |                 LUT |
 | LUT1     |   66 |                 LUT |
 | FDRE     |   66 |        Flop & Latch |
 | CARRY4   |   66 |          CarryLogic |

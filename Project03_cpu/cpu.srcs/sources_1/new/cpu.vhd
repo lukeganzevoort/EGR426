@@ -23,26 +23,26 @@ LIBRARY IEEE;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
--- entity cpu is
--- PORT(clk, clk100MHz : in STD_LOGIC;
---    reset : in STD_LOGIC;
---    Inport0, Inport1 : in STD_LOGIC_VECTOR(7 downto 0);
---    ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0);
---    sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111");
--- end cpu;
 entity cpu is
 PORT(clk, clk100MHz : in STD_LOGIC;
    reset : in STD_LOGIC;
    Inport0, Inport1 : in STD_LOGIC_VECTOR(7 downto 0);
    ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0);
-   sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111";
-   PCt : out UNSIGNED(8 downto 0);
-   IRt : out STD_LOGIC_VECTOR(7 downto 0);
-   MDRt : out STD_LOGIC_VECTOR(7 downto 0);
-   At,Bt : out SIGNED(7 downto 0);
-   Nt,Zt,Vt : out STD_LOGIC;
-   DATAt : out STD_LOGIC_VECTOR(7 downto 0));
+   sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111");
 end cpu;
+-- entity cpu is
+-- PORT(clk, clk100MHz : in STD_LOGIC;
+--    reset : in STD_LOGIC;
+--    Inport0, Inport1 : in STD_LOGIC_VECTOR(7 downto 0);
+--    ledport0, ledport1  : out STD_LOGIC_VECTOR(7 downto 0);
+--    sevport0, sevport1, sevport2, sevport3 : out std_logic_vector(6 downto 0) := "1111111";
+--    PCt : out UNSIGNED(8 downto 0);
+--    IRt : out STD_LOGIC_VECTOR(7 downto 0);
+--    MDRt : out STD_LOGIC_VECTOR(7 downto 0);
+--    At,Bt : out SIGNED(7 downto 0);
+--    Nt,Zt,Vt : out STD_LOGIC;
+--    DATAt : out STD_LOGIC_VECTOR(7 downto 0));
+-- end cpu;
 
 architecture a of cpu is
 -- ----------- Declare the ALU component ----------
@@ -162,15 +162,15 @@ ALU_FUNC <= IR(6 downto 4);
 -- U2 : microram_sim PORT MAP (CLOCK => clk, ADDRESS => ADDR, DATAOUT => RAM_DATA_OUT, DATAIN => DATA, WE => RAM_WE);
 U2 : microram_sim_inc PORT MAP (CLOCK => clk, ADDRESS => ADDR, DATAOUT => RAM_DATA_OUT, DATAIN => DATA, WE => RAM_WE);
 
-PCt <= PC;
-IRt <= IR;
-MDRt <= MDR;
-At <= A;
-Bt <= B;
-Nt <= N;
-Zt <= Z;
-Vt <= V;
-DATAt <= DATA;
+-- PCt <= PC;
+-- IRt <= IR;
+-- MDRt <= MDR;
+-- At <= A;
+-- Bt <= B;
+-- Nt <= N;
+-- Zt <= Z;
+-- Vt <= V;
+-- DATAt <= DATA;
 
 
 process (Inport0,clk100MHz,clk)

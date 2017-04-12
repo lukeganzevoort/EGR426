@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sun Apr 09 23:09:49 2017
-# Process ID: 7120
+# Start of session at: Tue Apr 11 16:27:49 2017
+# Process ID: 6228
 # Current directory: C:/Users/Luke/Documents/EGR426/Project03_cpu/cpu.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: C:/Users/Luke/Documents/EGR426/Project03_cpu/cpu.runs/synth_1/top_level.vds
