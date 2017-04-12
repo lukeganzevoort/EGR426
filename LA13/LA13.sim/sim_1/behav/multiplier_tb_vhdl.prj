@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../LA13.srcs/sources_1/ip/floating_point_1/sim/floating_point_1.vhd"
+vhdl xil_defaultlib  "../../../LA13.srcs/sources_1/new/multiplier.vhd"
+vhdl xil_defaultlib  "../../../LA13.srcs/sim_1/new/multiplier_tb.vhd"
+
+# Do not sort compile order
+nosort

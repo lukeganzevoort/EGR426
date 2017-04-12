@@ -1,0 +1,90 @@
+EGR 426
+Lecture 24 - 
+4/11/2017
+-------------------------------------------------
+* Course eval
+* LA #13 - due Thursday
+* Lab exam - Thursday 4-7:30
+* Quiz #11 - Tuesday
+* LA #14 - due week from Thursday
+* No lecture - week from Thursday
+* Project due Mon(11-1pm) April 24
+-------------------------------------------------
+
+Floating point representation
+
+    |signed bit | 8 bit exponent | Mantissa 23 bit |
+
+Normalization
+- Use as many bits as possible
+
+number = (-1)^S * (1+M) * 2^(E-127)
+
+Example
+    "-2345.125" to IEEE format
+    S = "1"
+    E
+        2345.125 to binary
+        2345 => "1001 0010 1001"
+        0.125x2 => 0.25  0
+        0.25x2 => 0.5    0
+        0.5x2 =>         1
+        0 =>             0
+
+        1001 0010 1001 . 0010000000...
+        shift left until leading 1
+        shift 11
+        1.00100101001001000000000...
+        2^11
+        E= 127+11 = 138 base 10 = "10001010"
+    M
+        125
+        "0010010100100000..." (23 bits)
+
+    Together
+        "1100 0101 0001 0010 1001 000000000..."
+        0xC510_9200
+
+Example
+    "-1.5" in IEEE format
+    S = 1
+    E
+        1 + 0.5
+
+        0.5*2 = 1.0   1
+        0.0*2 = 0     0
+
+        1.1 * 2^0
+        E - 127 = 0
+        E = 127 -> 0111 1111
+
+    M 100000...
+
+    Together
+        "1011 1111 1100 0000 0000 0000 0000 0000"
+        0xBFC0_0000
+
+Example
+    0xBFC0_0000 -> floating point
+    S = 1
+    E = 01111111
+    M = 1100 0000 0000 0000....
+
+    E = (0111 1111)_2 -> (127)_10
+        E-127 = 0
+
+    M = .10000000000000
+        * 2^-1 * 2^-2 = .1*2^-1 = 0.5
+
+    (-1)^1 * (1+0.5) * 2^0 = -1.5
+
+Example
+    0xC512_9200 -> floating point
+    1  100 0101 0  001 0010 1001 0010 0000
+
+    E = 1000 1010 = 138
+        E -127 = 11
+    M = 001 0010 1001 0010 0000
+        2^-3 + 2^-6 + 2^-8 + 2^-11 + 2^-14 = 0.14508056640625
+
+    -1 * (1 + 0.14508056640625) * 2^11
